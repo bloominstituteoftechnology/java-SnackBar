@@ -18,6 +18,11 @@ public class Snack
    {
        this.quantity = quantity;
    }
+
+   public price(double price)
+   {
+       this.price = price;
+   }
     //getters
     public int getQuantity()
     {
