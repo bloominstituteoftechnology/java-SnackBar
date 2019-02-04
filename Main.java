@@ -1,4 +1,4 @@
-package java-SnackBar
+package javaSnackBar;
 
 class Main {
 	public static void main(String[] args) {

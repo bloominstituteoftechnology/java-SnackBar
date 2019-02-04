@@ -1,4 +1,4 @@
-package java-SnackBar
+package javaSnackBar;
 
 class Vending {
 	private static int maxId = 0;

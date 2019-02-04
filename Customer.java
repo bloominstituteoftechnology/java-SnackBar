@@ -1,4 +1,4 @@
-package java-SnackBar
+package javaSnackBar;
 
 class Customer {
 	private static int maxId = 0;
@@ -11,12 +11,13 @@ class Customer {
 		this.cash = cash;
 		this.id += maxId;
 	}
-	public static void addCash(double cash) {
+	public void addCash(double cash) {
 		this.cash += cash;
 	}
 
-	public static int buy(double cash) {
+	public double buy(double cash) {
 		this.cash -= cash;
+		return cash;
 	}
 
 	public String getName() {
