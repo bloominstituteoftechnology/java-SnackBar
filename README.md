@@ -35,4 +35,4 @@ Snack 3 gets 12 more. Print quantity of snack 3.<br>
 Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.<br>
 <br>
 
-#INITIAL COMMIT
+***INITIAL COMMIT***
