@@ -2,6 +2,7 @@ package snackBarApp;
 
 public class Snack
 {
+    private static maxId = 0;
     public int id;
     public String name;
     public int quantity;
@@ -9,20 +10,17 @@ public class Snack
     public int vendingMachineId;
 
     // setters
-   public setName(String name)
+   public Snack(String name, int quantity, double price)
    {
+       maxId++;
+       id = maxId;
        this.name = name;
-   }
-
-   public addQuantity(int quantity)
-   {
        this.quantity = quantity;
-   }
-
-   public price(double price)
-   {
        this.price = price;
    }
+
+
+
     //getters
     public int getQuantity()
     {
