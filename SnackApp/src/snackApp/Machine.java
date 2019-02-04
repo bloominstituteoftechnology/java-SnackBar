@@ -10,6 +10,8 @@ public class Machine
     private int id;
     private String name;
 
+
+    // The constructor
     public Machine(String name)
     {
         // Set id, then increment max id
@@ -29,7 +31,7 @@ public class Machine
         return id;
     }
 
-    public int getName()
+    public String getName()
     {
         return name;
     }
