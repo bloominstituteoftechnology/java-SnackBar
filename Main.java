@@ -9,10 +9,11 @@ class Main {
 		Vending machine2 = new Vending("Drink");
 		Vending machine3 = new Vending("Office");
 
-		Snack snack1 = new Snack("Chips", 1.75, 36);
-		Snack snack2 = new Snack("Chocolate", 1.00, 36);
-		Snack snack3 = new Snack("Pretzel", 2.00, 30);
+		Snack snack1 = new Snack("Chips", 1.75, 36, machine1.getID());
+		Snack snack2 = new Snack("Chocolate", 1.00, 36, machine2.getID());
+		Snack snack3 = new Snack("Pretzel", 2.00, 30, machine3.getID());
 
+		
 
 	}
 }

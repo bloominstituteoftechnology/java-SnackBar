@@ -13,4 +13,8 @@ class Vending {
 	public static String getName() {
 		return name;
 	}
+
+	public int getID() {
+		return id;
+	}
 }
