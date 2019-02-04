@@ -16,9 +16,9 @@ class Main {
 		Snack snack5 = new Snack("Water", 2.75, 20, machine2.getID());
 
 		double customer1Buys = snack4.getCost() * 3;
-		customer1.buys(customer1Buys);
-		System.out.println("Customer 1 cash on hand: ", customer1.getCash());
-		System.out.println("Quantity of snack 4: ", snack4.getQuantity());
+		customer1.buy(customer1Buys);
+		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
+		System.out.println("Quantity of snack 4: " + snack4.getQuantity());
 
 	}
 }

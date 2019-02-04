@@ -28,7 +28,7 @@ class Snack {
 		this.quantity += quantity;
 	}
 
-	public static double buySnack(int quantity) {
+	public double buySnack(int quantity) {
 		double totalCost = getTotalCost(quantity);
 		return totalCost;
 	}
