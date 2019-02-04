@@ -20,5 +20,32 @@ class Main {
 		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
 		System.out.println("Quantity of snack 4: " + snack4.getQuantity());
 
+		customer1Buys = snacks3.buySnack(1);
+		customer1.buy(customer1Buys);
+		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
+                System.out.println("Quantity of snack 3: " + snack3.getQuantity());
+		
+		double customer2Buys = snacks4.buySnack(2);
+		customer2.buy(customer2Buys);
+		System.out.println("Customer 2 cash on hand: " + customer2.getCash());
+                System.out.println("Quantity of snack 4: " + snack4.getQuantity());
+
+		customer1.addCash(10);	
+		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
+
+		customer1Buys = snacks2.buySnack(1);
+                customer1.buy(customer1Buys);
+                System.out.println("Customer 1 cash on hand: " + customer1.getCash());
+                System.out.println("Quantity of snack 2: " + snack2.getQuantity());
+
+		snack3.addQuantity(12);
+		System.out.println("Quantity of snack 3: " + snack3.getQuantity());
+
+		customer2Buys = snacks3.buySnack(3);
+		customer2.buy(customer2Buys);
+                System.out.println("Customer 2 cash on hand: " + customer2.getCash());
+                System.out.println("Quantity of snack 3: " + snack3.getQuantity());
+
+
 	}
 }
