@@ -19,6 +19,10 @@ class Snack {
 	public int getQuantity() {
 		return quantity;
 	}
+	
+	public double getCost() {
+		return cost;
+	}
 
 	public static void addQuantity(int quantity) {
 		this.quantity += quantity;
