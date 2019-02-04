@@ -3,7 +3,7 @@ package javaSnackBar;
 class Main {
 	public static void main(String[] args) {
 		Customer customer1 = new Customer("Jane", 45.25);
-		Customer custmoer2 = new Customer("Bob", 33.14);
+		Customer customer2 = new Customer("Bob", 33.14);
 
 		Vending machine1 = new Vending("Food");
 		Vending machine2 = new Vending("Drink");
@@ -20,12 +20,12 @@ class Main {
 		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
 		System.out.println("Quantity of snack 4: " + snack4.getQuantity());
 
-		customer1Buys = snacks3.buySnack(1);
+		customer1Buys = snack3.buySnack(1);
 		customer1.buy(customer1Buys);
 		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
                 System.out.println("Quantity of snack 3: " + snack3.getQuantity());
 		
-		double customer2Buys = snacks4.buySnack(2);
+		double customer2Buys = snack4.buySnack(2);
 		customer2.buy(customer2Buys);
 		System.out.println("Customer 2 cash on hand: " + customer2.getCash());
                 System.out.println("Quantity of snack 4: " + snack4.getQuantity());
@@ -33,7 +33,7 @@ class Main {
 		customer1.addCash(10);	
 		System.out.println("Customer 1 cash on hand: " + customer1.getCash());
 
-		customer1Buys = snacks2.buySnack(1);
+		customer1Buys = snack2.buySnack(1);
                 customer1.buy(customer1Buys);
                 System.out.println("Customer 1 cash on hand: " + customer1.getCash());
                 System.out.println("Quantity of snack 2: " + snack2.getQuantity());
@@ -41,7 +41,7 @@ class Main {
 		snack3.addQuantity(12);
 		System.out.println("Quantity of snack 3: " + snack3.getQuantity());
 
-		customer2Buys = snacks3.buySnack(3);
+		customer2Buys = snack3.buySnack(3);
 		customer2.buy(customer2Buys);
                 System.out.println("Customer 2 cash on hand: " + customer2.getCash());
                 System.out.println("Quantity of snack 3: " + snack3.getQuantity());
