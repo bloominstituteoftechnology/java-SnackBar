@@ -20,9 +20,10 @@ public class Customer
 		this.cash += cash;
 	}
 
-	public void removeCash(double cash)
+	public void buySnack(int quantity, Snack snack)
 	{
-		this.cash -= cash;
+		snack.buySnack(quantity);
+		this.cash -= snack.getTotalCost(quantity);
 	}
 
 	public double getCash()
