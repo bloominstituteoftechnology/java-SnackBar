@@ -27,6 +27,11 @@ public class Customer
 
     // Getter methods
 
+    public int getId()
+    {
+        return id;
+    }
+
     public String getName()
     {
         return name;
