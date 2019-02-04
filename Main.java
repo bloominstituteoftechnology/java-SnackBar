@@ -9,6 +9,10 @@ class Main {
 		Vending machine2 = new Vending("Drink");
 		Vending machine3 = new Vending("Office");
 
-		Snack snack1 = new Snack("Chips");
+		Snack snack1 = new Snack("Chips", 1.75, 36);
+		Snack snack2 = new Snack("Chocolate", 1.00, 36);
+		Snack snack3 = new Snack("Pretzel", 2.00, 30);
+
+
 	}
 }

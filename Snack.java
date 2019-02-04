@@ -8,11 +8,12 @@ class Snack {
 	public int cost;
 	public int vendingMachineID;
 
-	public Snack(String name, double cost, int quantity) {
+	public Snack(String name, double cost, int quantity, int vendingMachineID) {
 		this.id += maxId;
 		this.name = name;
 		this.cost = cost;
 		this.quantity = quantity;
+		this.vendingMachineID = vendingMachineID;
 	}
 
 	public int getQuantity() {
