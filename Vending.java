@@ -10,7 +10,7 @@ class Vending {
 		this.name = name;
 	}
 
-	public static String getName() {
+	public String getName() {
 		return name;
 	}
 

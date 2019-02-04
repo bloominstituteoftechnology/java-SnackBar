@@ -5,7 +5,7 @@ class Snack {
 	public int id;
 	public String name;
 	public int quantity;
-	public int cost;
+	public double cost;
 	public int vendingMachineID;
 
 	public Snack(String name, double cost, int quantity, int vendingMachineID) {
@@ -24,17 +24,17 @@ class Snack {
 		return cost;
 	}
 
-	public static void addQuantity(int quantity) {
+	public void addQuantity(int quantity) {
 		this.quantity += quantity;
 	}
 
 	public static double buySnack(int quantity) {
-		int totalCost = getTotalCost(quantity);
+		double totalCost = getTotalCost(quantity);
 		return totalCost;
 	}
 
-	public static double getTotalCost(int quantity) {
-		int total = this.cost * quantity;
+	public double getTotalCost(int quantity) {
+		double total = this.cost * quantity;
 		return total;
 	}
 
