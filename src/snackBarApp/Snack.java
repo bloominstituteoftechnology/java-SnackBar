@@ -8,17 +8,24 @@ public class Snack
     public double cost;
     public int vendingMachineId;
 
-    // setter
-    public Snack(String name, int quantity, double cost, int vendingMachineId
-    {
-        this.name = name;
-        this.quantity = quantity;
-        this.cost = cost;
-        this.vendingMachineId = vendingMachineId;
-    }
+    // setters
+   public setName(String name)
+   {
+       this.name = name;
+   }
+
+   public addQuantity(int quantity)
+   {
+       this.quantity = quantity;
+   }
     //getters
     public int getQuantity()
     {
         return quantity;
+    }
+    public double getPrice()
+    {
+        System.out.println(price * quantity);
+        return price * quantity;
     }
 }
