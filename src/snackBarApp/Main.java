@@ -16,7 +16,18 @@ public class Main
        System.out.println(v2);
        System.out.println(v3);
 
-       
+
+       Snack s1 = new Snack("Chips", 36, 1.75, "Food");
+       Snack s2 = new Snack("Chocolate Bar",36, 1.00, "Food");
+       Snack s3 = new Snack("Chips", 30, 1.75, "Food");
+       System.out.println(s1);
+       System.out.println(s2);
+       System.out.println(s3);
+
+       Snack s4 = new Snack("Soda", 24, 2.50, "Drink");
+       Snack s5 = new Snack("Water", 20, 2.75, "Drink");
+       System.out.println(s4);
+       System.out.println(s5);
     }
     public static void main(String[] args)
     {

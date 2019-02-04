@@ -7,16 +7,17 @@ public class Snack
     public String name;
     public int quantity;
     public double cost;
-    public int vendingMachineId;
+    public String vendingMachineId;
 
     // setters
-   public Snack(String name, int quantity, double price)
+   public Snack(String name, int quantity, double price, String vendingMachineId)
    {
        maxId++;
        id = maxId;
        this.name = name;
        this.quantity = quantity;
        this.cost = price;
+       this.vendingMachineId = vendingMachineId;
    }
 
     public int buySnack(int amount)
