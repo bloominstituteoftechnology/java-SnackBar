@@ -2,7 +2,7 @@ package snackBarApp;
 
 public class Snack
 {
-    private static maxId = 0;
+    private static int maxId = 0;
     public int id;
     public String name;
     public int quantity;
@@ -16,10 +16,14 @@ public class Snack
        id = maxId;
        this.name = name;
        this.quantity = quantity;
-       this.price = price;
+       this.cost = price;
    }
 
-
+    public int buySnack(int amount)
+    {
+        quantity -= amount;
+        return quantity;
+    }
 
     //getters
     public int getQuantity()
@@ -28,7 +32,7 @@ public class Snack
     }
     public double getPrice()
     {
-        System.out.println(price * quantity);
-        return price * quantity;
+        System.out.println(cost * quantity);
+        return cost * quantity;
     }
 }

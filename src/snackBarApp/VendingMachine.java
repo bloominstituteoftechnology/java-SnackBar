@@ -1,6 +1,6 @@
 package snackBarApp;
 
-public class VendingMachine()
+public class VendingMachine
         {
             private static int maxId = 0;
             public int id;
@@ -13,9 +13,9 @@ public class VendingMachine()
                 this.name = name;
             }
 
-            public getName()
+            public String getName()
             {
                 System.out.println("name: " + name);
-             return name;
+                return name;
             }
         }
