@@ -34,7 +34,7 @@ public class Snack
     //Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, get total cost given a quantity
 
     // Getter methods
-    public getId()
+    public int getId()
     {
         return id;
     }
