@@ -59,7 +59,7 @@ public class Snack
         return vendingMachineId;
     }
 
-    public double getCost(int quantity)
+    public double getMultiCost(int quantity)
     {
         return quantity * cost;
     }
