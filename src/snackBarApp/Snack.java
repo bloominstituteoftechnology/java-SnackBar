@@ -10,20 +10,26 @@ public class Snack
     public String vendingMachineId;
 
     // setters
-   public Snack(String name, int quantity, double price, String vendingMachineId)
+   public Snack(String name, int quantity, double cost, String vendingMachineId)
    {
        maxId++;
        id = maxId;
        this.name = name;
        this.quantity = quantity;
-       this.cost = price;
+       this.cost = cost;
        this.vendingMachineId = vendingMachineId;
    }
-
-    public int buySnack(int amount)
+    public int addSnack(int quantity)
     {
-        quantity -= amount;
+
+        this.quantity += quantity;
         return quantity;
+    }
+
+    public double buySnack(int amount)
+    {
+       double totalCost = getPrice(quantity);
+       return totalCost;
     }
 
     //getters
@@ -31,11 +37,14 @@ public class Snack
     {
         return quantity;
     }
-    public double getPrice()
+    public double getPrice(int quantity)
     {
-        System.out.println(cost * quantity);
-        return cost * quantity;
+        System.out.println("Snack will cost: " + this.cost * quantity);
+        return this.cost * quantity;
     }
+
+
+
     @Override
     public String toString()
     {

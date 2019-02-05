@@ -26,14 +26,18 @@ public class Customer
                 System.out.println("name: " + name);
                 return name;
             }
+            public double getCashOnHand()
+            {
+                return cashOnHand;
+            }
 
             public double buy(double price)
                 {
-                    if(price > cashOnHand){
+                    if(price > getCashOnHand()){
                         System.out.println("Insufficient fund");
                         return cashOnHand;
                     } else {
-                        cashOnHand -= price;
+                        this.cashOnHand -= price;
                         System.out.println("You spent" + price + "\n" +
                                             "and have:" + cashOnHand + "left" + "\n" +
                                             "");
