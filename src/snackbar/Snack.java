@@ -19,6 +19,9 @@ public class Snack {
     
     public Snack (String name, int quantity, double cost) {
         maxId++;
-        
+        id = maxId;
+        this.name = name;
+        this.quantity = quantity;
+        this.cost = cost;
     }
 }
