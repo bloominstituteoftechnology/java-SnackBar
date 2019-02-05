@@ -39,7 +39,10 @@ public class Customer {
     }
     
     public void makePurchase(int quantity, Snack snack) {
-        this.cash -= snack.getTotalCost(quantity);
+        if (this.cash <= snack.getTotalCost(quantity)) {
+            this.cash -= snack.getTotalCost(quantity);
+        }
+        throw new UnsupportedOperationException("Not enough cash");
     }
     
 }

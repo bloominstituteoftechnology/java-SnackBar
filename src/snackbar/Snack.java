@@ -52,6 +52,6 @@ public class Snack {
             double cost = quantity * this.cost;
             return cost;
         }
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not enough quantity");
     }
 }
