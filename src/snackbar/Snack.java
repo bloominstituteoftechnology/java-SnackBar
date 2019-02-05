@@ -33,7 +33,7 @@ public class Snack {
     public void buySnack(Customer customer, VendingMachine vendingMachine, int quantity) {
         if (quantity > 0) {
             customer.buy(this, quantity);
-            vendingMachine.sell(quantity);
+            vendingMachine.sell(this, quantity);
         }
     }
 
