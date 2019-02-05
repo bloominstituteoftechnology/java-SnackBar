@@ -44,6 +44,11 @@ public class Customer {
 //            System.out.println("in the conditional statement");
             cash -= snack.getTotalCost(quantity);
             snack.buySnack(quantity);
+        } else {
+            if (cash < snack.getTotalCost(quantity))
+                throw new UnsupportedOperationException("Not enough cash");
+            if (quantity > snack.getQuantity())
+                throw new UnsupportedOperationException("Not enough quantity");
         }
     }
     

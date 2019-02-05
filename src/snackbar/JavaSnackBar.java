@@ -44,6 +44,17 @@ public class JavaSnackBar {
         
         c1.setCash(10);
         System.out.printf("\nCustomer1 cash on hand: %.2f", c1.getCash());
+        
+        c1.makePurchase(1, s2);
+        System.out.printf("\nCustomer1 cash on hand: %.2f, quantity of snack2: %d",
+                c1.getCash(), s2.getQuantity());
+        
+        s3.setQuantity(12);
+        System.out.println("\nQuantity of snack3: " + s3.getQuantity());
+        
+        c2.makePurchase(3, s3);
+        System.out.printf("\nCustomer2 cash on hand: %.2f, quantity of snack3: %d",
+                c2.getCash(), s3.getQuantity());
     }
     
     public static void main(String[] args) {
