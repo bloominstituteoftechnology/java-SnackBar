@@ -1,5 +1,6 @@
 package snackBar;
 
+
 public class Snack{
 
     private static int maxId = 0;

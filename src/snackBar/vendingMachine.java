@@ -6,6 +6,7 @@ public class VendingMachine {
     public int id;
     public String name;
 
+    
     public VendingMachine (String name){
         maxId++;
         id = maxId;
