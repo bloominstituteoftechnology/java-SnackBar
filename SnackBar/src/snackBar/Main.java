@@ -31,6 +31,10 @@ public class Main {
     private static void snackBar() {
         Customers Jane = new Customers("Jane", 45.25);
         Customers Bob = new Customers("Bob", 33.14);
+
+        VendingMachines Food = new VendingMachines("Food");
+        VendingMachines Drink = new VendingMachines("Drink");
+        VendingMachines Office = new VendingMachines("Office");
     }
 
     public static void main(String[] args) {
