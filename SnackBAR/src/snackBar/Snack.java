@@ -1,5 +1,6 @@
-package snackBar; 
+package snackBar;
 
+// Snack has id, name, quantity, cost, vending machine id
 public class Snack 
 {
     private static int maxId = 0;
@@ -9,7 +10,8 @@ public class Snack
     private double cost; 
     private int vendingMachineID; 
 
-    public Snack (String name, int quantity, double cost, int vendingMachineID)
+    // construtor with params
+    public Snack(String name, int quantity, double cost, int vendingMachineID)
     {
         madId++;
         id = maxId;
@@ -20,42 +22,36 @@ public class Snack
         this.vendingMachineID = vendingMachineID;
     }
 
-    // method set to set name of snack
+    // GETTERS AND SETTERS-------------------------------
+    // Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, get total cost given a quantity.
+
+    // method to set name
     public void setName(String name)
     {
         this.name = name;
     }
     
-    // method set to get name of snacks
-    public String getName()
-    {
-        return name; 
-    } 
-    
-    // method set to get quantity 
-    public double getQuantity() 
+    // method to get quantity 
+    public int getQuantity() 
     {
         return quantity;
     }
 
-    // method for setting quantity
-    public void setQuantity(double quantity)
+    // method to add quantity given quantity 
+    public void addQuantity(int quantity)
     {
-        this.quantity = quantity;
+        this.quantity += quantity;
     }
 
-    // buy snack given quantity
-    
-    
-    // method to get cost 
-    public double getCost()
+    // method to buy snack given quantity
+    public void buySnack(int quantity)
     {
-        return cost;
+        this.quantity -= quantity;
     }
 
-    // get total cost given a quantity
+    // method to get total cost given a quantity
     public double getTotalCost(int quantity)
     {
-        return this.cost * quantity;
+        return cost * quantity;
     }
 }
