@@ -30,6 +30,20 @@ public class JavaSnackBar {
         
         System.out.println("\t Query Data \t");
         
+        c1.makePurchase(3, s4);
+        System.out.printf("\nCustomer1 cash on hand: %.2f, quantity of snack4: %d",
+                c1.getCash(), s4.getQuantity());
+        
+        c1.makePurchase(1, s3);
+        System.out.printf("\nCustomer1 cash on hand: %.2f, quantity of snack3: %d",
+                c1.getCash(), s3.getQuantity());
+        
+        c2.makePurchase(2, s4);
+        System.out.printf("\nCustomer2 cash on hand: %.2f, quantity of snack4: %d",
+                c2.getCash(), s4.getQuantity());
+        
+        c1.setCash(10);
+        System.out.printf("\nCustomer1 cash on hand: %.2f", c1.getCash());
     }
     
     public static void main(String[] args) {

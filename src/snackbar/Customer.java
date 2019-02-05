@@ -39,10 +39,12 @@ public class Customer {
     }
     
     public void makePurchase(int quantity, Snack snack) {
-        if (this.cash <= snack.getTotalCost(quantity)) {
-            this.cash -= snack.getTotalCost(quantity);
+//        System.out.println("\n\n" + snack.getTotalCost(quantity) +" cash "+cash);
+        if (cash >= snack.getTotalCost(quantity) && quantity <= snack.getQuantity()) {
+//            System.out.println("in the conditional statement");
+            cash -= snack.getTotalCost(quantity);
+            snack.buySnack(quantity);
         }
-        throw new UnsupportedOperationException("Not enough cash");
     }
     
 }

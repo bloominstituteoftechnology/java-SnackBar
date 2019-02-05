@@ -42,15 +42,15 @@ public class Snack {
         return quantity;
     }
     
-//    public void buySnack (int quantity) {
-//        this.quantity -= quantity;
-//    }
+    public void buySnack (int quantity) {
+        this.quantity -= quantity;
+    }
     
     public double getTotalCost (int quantity) {
+        double snackCost;
         if (quantity <= this.quantity) {
-            this.quantity -= quantity;
-            double cost = quantity * this.cost;
-            return cost;
+            snackCost = quantity * this.cost;
+            return snackCost;
         }
         throw new UnsupportedOperationException("Not enough quantity");
     }
