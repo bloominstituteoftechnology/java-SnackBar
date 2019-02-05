@@ -1,5 +1,6 @@
 package snackBar; 
 
+// Vending machine has id, name
 public class VendingMachine
 {
     private static int maxId = 0;
@@ -13,12 +14,18 @@ public class VendingMachine
         this.name = name;
     }
 
-    // method set to get name
+    // GETTERS AND SETTERS--------------------------
+    // Vending Machine set and return name
+
+    // method to get name
     public String getName()
     {
         return name;
     }
-}
 
-// Vending machine has id, name
-// Vending Machine set and return name
+    // method to set name
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+}
