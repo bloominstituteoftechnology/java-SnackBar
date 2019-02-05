@@ -9,26 +9,37 @@ package snackbar;
  *
  * @author habib
  */
-public class VendMach {
+public class Customer {
     private static int maxId = 0;
     private int id;
     private String name;
+    private double cash = 0;
     
-    public VendMach (String name) {
+    public Customer (String name, double cash) {
         maxId++;
         id = maxId;
         this.name = name;
+        this.cash = cash;
+    }
+    
+    public void setCash (double cash) {
+        this.cash += cash;
+    }
+    
+    public void setName (String name) {
+        this.name = name;
+    }
+    
+    public double getCash () {
+        return cash;
     }
     
     public String getName () {
         return name;
     }
     
-    public int getId () {
-        return id;
+    public void makePurchase(int quantity, Snack snack) {
+        this.cash -= snack.getTotalCost(quantity);
     }
     
-    public void setName (String name) {
-        this.name = name;
-    }
 }

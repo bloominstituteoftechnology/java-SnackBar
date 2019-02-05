@@ -17,12 +17,13 @@ public class Snack {
     private double cost;
     private int vendMachId;
     
-    public Snack (String name, int quantity, double cost) {
+    public Snack (String name, int quantity, double cost, int vendMachId) {
         maxId++;
         id = maxId;
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
+        this.vendMachId = vendMachId;
     }
     
     public void setName (String name) {
@@ -48,7 +49,7 @@ public class Snack {
     public double getTotalCost (int quantity) {
         if (quantity <= this.quantity) {
             this.quantity -= quantity;
-            cost = quantity * this.cost;
+            double cost = quantity * this.cost;
             return cost;
         }
         throw new UnsupportedOperationException();
