@@ -8,6 +8,7 @@ public class Customer {
     private Snack stock[];
 
     public Customer(String name, int cash) {
+        stock = new Snack[1000];
         maxId++;
         this.id = maxId;
         this.name = name;
