@@ -28,4 +28,10 @@ public class VendingMachine
     {
         this.name = name;
     }
+
+    // method to get id
+    public int getId()
+    {
+        return id;
+    }
 }
