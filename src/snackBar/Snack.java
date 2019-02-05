@@ -3,11 +3,11 @@ package snackBar;
 public class Snack
 {
   private static int maxId = 0;
-  private int id;
-  private String name;
-  private int quant;
-  private double cost;
-  private int vmachineId;
+  public int id;
+  public String name;
+  public int quant;
+  public double cost;
+  public int vmachineId;
 
   public Snack (String name, int quant, double cost, int vmachineId) 
   {
@@ -48,7 +48,7 @@ public class Snack
   }
 
   //get total cost given a quantity.
-  public double getTotalcost(int quant, double cost)
+  public double getTotalcost(int quant)
   {
     return quant * cost;
   }

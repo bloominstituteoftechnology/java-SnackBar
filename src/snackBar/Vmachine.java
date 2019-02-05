@@ -6,10 +6,16 @@ public class Vmachine
   private int id;
   private String name;
 
-  public Vmachine(String name) {
+  public Vmachine(String name) 
+  {
     maxId++;
     id = maxId;
     this.name = name;
+  }
+
+  public int getId()
+  {
+    return id;
   }
 
   // Vending Machine set and return name
@@ -19,9 +25,5 @@ public class Vmachine
 
   public String getName() {
     return name;
-  }
-
-  public int getId() {
-    return id;
   }
 }

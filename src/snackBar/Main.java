@@ -19,10 +19,15 @@ public class Main
 
 
     System.out.println("*** Query Data ***");
-    // Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
-    System.out.println(s4);
-    // Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
-    // Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
+    // 1. Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
+    System.out.println("Customer 1 Cash on hand :"+(c1.cash - s4.getTotalcost(3)));
+    System.out.println("Quntity of snack 4 :"+(s4.quant - 3));
+    // 2. Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
+    System.out.println("Customer 1 Cash on hand :"+(c1.cash - s3.getTotalcost(1)));
+    System.out.println("Quntity of snack 3 :"+(s3.quant - 1));
+    // 3. Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
+    System.out.println("Customer 2 Cash on hand :"+(c2.cash - s4.getTotalcost(2)));
+    System.out.println("Quntity of snack 4 :"+(s4.quant - 2));
     // Customer 1 finds $10. Print Customer 1 Cash on Hand.
     // Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity of snack 2.
     // Snack 3 gets 12 more. Print quantity of snack 3.

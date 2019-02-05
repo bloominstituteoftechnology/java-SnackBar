@@ -15,17 +15,16 @@ public class Customer
   // add cash, buy given total cash used in purchase
   public void addCash(double cash)
   {
-    double totalCash = this.cash + cash;
-    this.cash = total.cash;
+    this.cash = this.cash + cash;
   }
 
   // get and set name, get cash on hand. 
-  public int getName()
+  public String getName()
   {
     return name;
   }
 
-  public void setName(int name)
+  public void setName(String name)
   {
     this.name = name;
   }
