@@ -19,3 +19,6 @@ public class VendingMachine
         return name;
     }
 }
+
+// Vending machine has id, name
+// Vending Machine set and return name
