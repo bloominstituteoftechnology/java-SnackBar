@@ -5,19 +5,29 @@ package snackBar;
 
 public class Snacks {
     private static int maxId = 0;
-    public int id; 
-    public String name; 
-    public int quantity; 
-    public double cost;
-    public int vendingMachineId;
+    private int id; 
+    private String name; 
+    private int quantity; 
+    private double cost;
+    private int vendingMachineId;
 
     public Snacks (String name, int quantity, double cost, int vendingMachineId) {
-        maxId++
+        maxId++;
         id = maxId; 
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
         this.vendingMachineId = vendingMachineId;
+    }
+
+    // Get Id
+    public int getId() {
+        return id;
+    }
+
+    // Get Snack Name
+    public String getName() {
+        return name;
     }
 
     // Set Snack Name 
@@ -31,8 +41,13 @@ public class Snacks {
     }
 
     // Add Quantity
-    public void addQuanity(int quantity) {
+    public void addQuantity(int quantity) {
         this.quantity += quantity;
+    }
+
+    // Remove Quantity
+    public void removeQuantity(int quantity) {
+        this.quantity -= quantity;
     }
 
     // Buy Snack

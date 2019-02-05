@@ -14,6 +14,11 @@ public class VendingMachines {
         this.name = name;
     }
 
+    // Get Id
+    public int getId() {
+        return id;
+    }
+
     // Get Name
     public String getName() {
         return name;
