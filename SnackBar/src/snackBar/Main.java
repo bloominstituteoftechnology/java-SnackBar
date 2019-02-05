@@ -35,6 +35,12 @@ public class Main {
         VendingMachines Food = new VendingMachines("Food");
         VendingMachines Drink = new VendingMachines("Drink");
         VendingMachines Office = new VendingMachines("Office");
+
+        Snacks Chips = new Snacks("Chips", 36, 1.75, Food.id);
+        Snacks ChocolateBar = new Snacks("Chocolate Bar", 36, 1.00, Food.id);
+        Snacks Pretzel = new Snacks("Pretzel", 30, 2.00, Food.id);
+        Snacks Soda = new Snacks("Soda", 24, 2.50, Drink.id);
+        Snacks Water = new Snacks("Water", 20, 2.75, Drink.id);
     }
 
     public static void main(String[] args) {
