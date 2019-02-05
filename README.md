@@ -1,4 +1,19 @@
-# Project (Shippable JAR file including multi Class application - Snack Bar):
+# Project Snack Bar:
+
+A student the completes this project shows that they can:
+
+* use the Java Development Kit (jdk)
+* construct Java classes
+* Instantiate and use Java Objects
+* use and manipulate Java base data types
+
+# Introduction
+
+Variations on the Snack Bar Project have been part of Java Education 
+since Java was created. So, we will do one. The point is to set up 
+vending machines where a person buys snacks from those machines.
+
+# Instructions
 
 Snack has id, name, quantity, cost, vending machine id\
 Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, get total cost given a quantity.
