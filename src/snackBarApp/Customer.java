@@ -35,8 +35,17 @@ public class Customer
                     } else {
                         cashOnHand -= price;
                         System.out.println("You spent" + price + "\n" +
-                                            "and have:" + cashOnHand + "left");
-                        return price;
+                                            "and have:" + cashOnHand + "left" + "\n" +
+                                            "");
+                        return cashOnHand;
                     }
+                }
+                @Override
+                public String toString()
+                {
+                    String rtnStr = "id: " + id + "\n" +
+                                    "name: " + name + "\n" +
+                                    "cash on hand: " + cashOnHand;
+                    return rtnStr;
                 }
         }

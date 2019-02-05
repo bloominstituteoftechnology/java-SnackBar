@@ -18,4 +18,11 @@ public class VendingMachine
                 System.out.println("name: " + name);
                 return name;
             }
+            @Override
+            public String toString()
+            {
+                String rtrStr = "id: " + id + "\n" +
+                                "name: " + name;
+                return rtrStr;
+            }
         }

@@ -36,4 +36,15 @@ public class Snack
         System.out.println(cost * quantity);
         return cost * quantity;
     }
+    @Override
+    public String toString()
+    {
+
+
+        String rtnStr = "name: " + name + "\n" +
+                        "quantity: " + quantity + "\n" +
+                        "cost: " + cost + "\n" +
+                        "vendingMachine: " + vendingMachineId;
+        return rtnStr;
+    }
 }
