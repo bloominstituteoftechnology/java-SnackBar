@@ -4,31 +4,35 @@ public class Snack {
     private static int maxId;
     private int id;
     private String name;
-    private int quantity;
     private double cost;
-    private int machineID;
+    // private int quantity;
+    // private int machineID;
 
-    public Snack(String name, int quantity, double cost, int machineID) {
+    public Snack(String name, double cost) {
         maxId++;
         this.id = maxId;
         this.name = name;
-        this.quantity = quantity;
         this.cost = cost;
-        this.machineID = machineID;
+        // this.quantity = quantity;
+        // this.machineID = machineID;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getName() {
+        return name;
     }
 
-    public void addQuantity(int quantity) {
-        if (quantity > 0)
-            this.quantity += quantity;
-    }
+    // public int getQuantity() {
+    // return quantity;
+    // }
+
+    // public void addQuantity(int quantity) {
+    // if (quantity > 0)
+    // this.quantity += quantity;
+    // }
 
     public void buySnack(Customer customer, VendingMachine vendingMachine, int quantity) {
         if (quantity > 0) {

@@ -25,11 +25,13 @@ public class VendingMachine {
     public boolean sell(Snack item, int quantity) {
         Snack[] testStock = stock;
         boolean testBool = false;
+        int count = 0;
 
         for (int i = 0; i < testStock.length; i++) {
-            if (testStock[i] == item) {
+            if (testStock[i] == item && count < quantity) {
                 testStock[i] = null;
                 testBool = true;
+                count++;
             }
         }
         if (!testBool) {
@@ -40,12 +42,25 @@ public class VendingMachine {
     }
 
     public boolean stockItem(Snack item, int quantity) {
-        if (currentStock + quantity > 999)
+        int total = currentStock + quantity;
+        if (total > 999) {
+            System.out.println("Stock failed:" + item.getName());
             return false;
-        for (int i = 0; i < quantity; i++) {
+        }
+        for (int i = currentStock; i < total; i++) {
             stock[currentStock] = item;
             currentStock++;
         }
         return true;
+    }
+
+    public int getItemStock(Snack item) {
+        int count = 0;
+        for (int i = 0; i < currentStock; i++) {
+            if (stock[i] instanceof Snack && (stock[i].getName() == item.getName())) {
+                count++;
+            }
+        }
+        return count;
     }
 }

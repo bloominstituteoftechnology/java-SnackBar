@@ -7,7 +7,7 @@ public class Customer {
     private double cash;
     private Snack stock[];
 
-    public Customer(String name, int cash) {
+    public Customer(String name, double cash) {
         stock = new Snack[1000];
         maxId++;
         this.id = maxId;
@@ -21,6 +21,14 @@ public class Customer {
 
     public String getName() {
         return name;
+    }
+
+    public double getCash() {
+        return cash;
+    }
+
+    public void addCash(int cash) {
+        this.cash += cash;
     }
 
     public boolean buy(Snack item, int quantity) {
