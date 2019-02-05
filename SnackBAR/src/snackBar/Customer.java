@@ -27,9 +27,10 @@ public class Customer
     }
 
     // method to buy given total cash used in purchase
-    public void removeCash(double cashOnHand) 
+    public void buySnack(int quantity, Snack snack) 
     {
-        this.cashOnHand -= cashOnHand;
+        snack.buySnack(quantity);
+        this.cashOnHand -= snack.getTotalCost(quantity);
     }
 
     // method to get name

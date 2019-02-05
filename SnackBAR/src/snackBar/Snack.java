@@ -13,7 +13,7 @@ public class Snack
     // construtor with params
     public Snack(String name, int quantity, double cost, int vendingMachineID)
     {
-        madId++;
+        maxId++;
         id = maxId;
 
         this.name = name;
