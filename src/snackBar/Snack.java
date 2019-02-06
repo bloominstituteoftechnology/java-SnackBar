@@ -16,24 +16,24 @@ public class Snack {
         this.machine_id = machine_id;
     }
 
-    public String setName(String name) {
-        return this.name = name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getQuantity() {
-        return this.quantity = quantity;
+        return quantity;
     }
 
-    public int addQuantity(int quantity) {
-        return this.quantity += quantity;
+    public void addQuantity(int quantity) {
+        this.quantity += quantity;
     }
 
-    public Boolean buySnack() {
-        return this.quantity > 0;
+    public void buySnack(int quantity) {
+        this.quantity -= quantity;
     }
 
-    public double getCost() {
-        return this.quantity * this.cost;
+    public double getCost(int quantity) {
+        return quantity * cost;
     }
 
 }

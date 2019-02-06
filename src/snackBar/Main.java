@@ -15,6 +15,7 @@ public class Main {
         Snack s4 = new Snack("Soda", 24, 2.50, v2.id);
         Snack s5 = new Snack("Water", 20, 2.75, v2.id);
 
-        System.out.println("Hello");
+        System.out.println("Data Below");
+        System.out.println()
     }
 }
