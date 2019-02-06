@@ -1,13 +1,15 @@
-package java-SnackBar;
+package snackBar;
 
 public class Snack {
-    private int id;
+    private static int maxId = 0;
+    public int id;
     private String name;
     private int quantity;
     private double cost;
     private int machine_id;
 
     public Snack(String name, int quantity, double cost, int machine_id) {
+        id = maxId++;
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
@@ -15,18 +17,18 @@ public class Snack {
     }
 
     public String setName(String name) {
-        this.name = name;
+        return this.name = name;
     }
 
     public int getQuantity() {
-        this.quantity = quantity;
+        return this.quantity = quantity;
     }
 
     public int addQuantity(int quantity) {
-        this.quantity += quantity;
+        return this.quantity += quantity;
     }
 
-    public int buySnack() {
+    public Boolean buySnack() {
         return this.quantity > 0;
     }
 

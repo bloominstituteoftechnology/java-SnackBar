@@ -1,16 +1,18 @@
-package java-SnackBar;
+package snackBar;
 
 public class Vending {
-    private int id;
+    private static int maxId = 0;
+    public int id;
     private String name;
 
-    public class Vending(String name) {
+    public Vending(String name) {
+        id = maxId++;
         this.name = name;
     }
     public String getName() {
         return this.name;
     }
     public String setName(String name) {
-        this.name = name;
+       return this.name = name;
     }
 }
