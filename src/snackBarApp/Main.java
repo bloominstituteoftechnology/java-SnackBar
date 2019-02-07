@@ -46,7 +46,7 @@ public class Main {
     }
 
     private static void printDetails(Customer c, Snack s, int q) {
-        System.out.println(c.name + " bought " + q + " " + s.name);
+        System.out.println(c.name + " bought " + q + " " + s.name + "s");
         System.out.println(c.name + " has $" + c.cash + " remaining.");
         System.out.println(s.getQuantity() + " " + s.name + "s remaining.\n");
     }
