@@ -21,7 +21,7 @@ public class Snack {
     }
 
     public int getQuantity() {
-        return quantity;
+        return this.quantity;
     }
 
     public void addQuantity(int quantity) {

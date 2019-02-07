@@ -16,19 +16,20 @@ public class Customer {
         return this.cash += cash;
     }
 
-    public double buyProduct() {
-        return this.cash;
+    public void buySnack(int quantity, Snack snack) {
+        snack.buySnack(quantity);
+        this.cash -= snack.getCost(quantity);
     }
 
     public String getName() {
         return this.name;
     }
 
-    public String setName(String name) {
-        return this.name = name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getCash() {
-        return this.cash;
+        return cash;
     }
 }
