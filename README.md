@@ -16,12 +16,15 @@ vending machines where a person buys snacks from those machines.
 # Instructions
 
 Snack has id, name, quantity, cost, vending machine id.
+
 Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, and get total cost given a quantity.
 
 Vending machine has id, name.
+
 Vending Machine can set and return name.
 
 Customer has id, name, cash on hand.
+
 Customer can add cash, buy given total cash used in the purchase, get and set name, and get cash on hand.  
 
 * Instantiate 2 customers
