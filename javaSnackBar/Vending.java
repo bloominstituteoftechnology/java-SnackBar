@@ -2,8 +2,8 @@ package javaSnackBar;
 
 class Vending {
 	private static int maxId = 0;
-	public int id;
-	public String name;
+	private int id;
+	private String name;
 
 	public Vending(String name) {
 		this.id += maxId;

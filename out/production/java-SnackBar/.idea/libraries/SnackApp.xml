@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SnackApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SnackApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

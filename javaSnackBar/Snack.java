@@ -2,11 +2,11 @@ package javaSnackBar;
 
 class Snack {
 	private static int maxId = 0;
-	public int id;
-	public String name;
-	public int quantity;
-	public double cost;
-	public int vendingMachineID;
+	private int id;
+	private String name;
+	private int quantity;
+	private double cost;
+	private int vendingMachineID;
 
 	public Snack(String name, double cost, int quantity, int vendingMachineID) {
 		this.id += maxId;

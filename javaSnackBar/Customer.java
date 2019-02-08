@@ -2,9 +2,9 @@ package javaSnackBar;
 
 class Customer {
 	private static int maxId = 0;
-	public int id;
-	public String name;
-	public double cash;
+	private int id;
+	private String name;
+	private double cash;
 
 	Customer(String name, double cash) {
 		this.name = name;
