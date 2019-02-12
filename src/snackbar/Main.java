@@ -75,7 +75,7 @@ class Main {
         System.out.println("Snack 3 quantity: " + Pretzel.getQuantity());
 
     }
-    public static void Main(String[] args){
+    public static void main(String[] args){
         doTheThing();
     }
 }
