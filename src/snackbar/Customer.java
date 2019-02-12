@@ -22,7 +22,7 @@ class Customer {
         return cashOnHand;
     }
 
-    public buySnack(double cost){
+    public void buySnack(double cost){
         cashOnHand -= cost;
     }
 
