@@ -17,7 +17,7 @@ class Customer
 
   public void addCashOnHand(double cash)
   {
-    this.cash += cash;
+    this.cashOnHand += cash;
   }
 
   public String getName()
@@ -35,8 +35,8 @@ class Customer
     this.cashOnHand -= cost;
   }
 
-  public int getCashOnHand()
+  public double getCashOnHand()
   {
-    return cash;
+    return cashOnHand;
   }
 }

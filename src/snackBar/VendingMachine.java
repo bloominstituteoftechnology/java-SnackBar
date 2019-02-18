@@ -22,4 +22,9 @@ public class VendingMachine
   {
     return name;
   }
+
+  public int getId()
+  {
+    return id;
+  }
 }

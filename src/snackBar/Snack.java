@@ -20,7 +20,7 @@ public class Snack
     this.machineId = machineId;
   }
   // define getter/setter methods: setName, getQuantity, addQuantity, 
-buySnacks, getCost
+// buySnacks, getCost
 
   public void setName(String name)
   {
