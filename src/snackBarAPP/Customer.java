@@ -3,15 +3,13 @@ package snackBarAPP;
 public class Customer {
     private static int maxId = 0;
     private int id;
-    private String fname;
-    private String lname;
+    private String name;
     private double budget;
 
-    public Customer(String fname, String lname, double budget) {
+    public Customer(String name, double budget) {
         maxId++;
         this.id = maxId;
-        this.fname = fname;
-        this.lname = lname;
+        this.name = name;
         this.budget = budget;
     }
 
@@ -20,7 +18,11 @@ public class Customer {
     }
 
     public String getName() {
-        return fname + lname;
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public boolean hasSufficientFunds(double expense) {
