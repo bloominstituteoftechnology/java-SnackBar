@@ -4,7 +4,7 @@ A student the completes this project shows that they can:
 
 * use the Java Development Kit (jdk)
 * construct Java classes
-* Instantiate and use Java Objects
+* instantiate and use Java Objects
 * use and manipulate Java base data types
 
 # Introduction
@@ -15,14 +15,14 @@ vending machines where a person buys snacks from those machines.
 
 # Instructions
 
-Snack has id, name, quantity, cost, vending machine id\
-Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, get total cost given a quantity.
+Snack has id, name, quantity, cost, vending machine id.\
+Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, and get total cost given a quantity.
 
-Vending machine has id, name\
-Vending Machine set and return name
+Vending machine has id, name.\
+Vending Machine can set and return name.
 
-Customer has id, name, cash on hand\
-Customer can add cash, buy given total cash used in purchase, get and set name, get cash on hand.  
+Customer has id, name, cash on hand.\
+Customer can add cash, buy given total cash used in the purchase, get and set name, and get cash on hand.  
 
 * Instantiate 2 customers
     * Jane with $45.25
@@ -44,8 +44,8 @@ Processing
 
 1. Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
 1. Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
-1. Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
-1. Customer 1 finds $10. Print Customer 1 Cash on Hand.
-1. Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity of snack 2.
+1. Customer 2 buys 2 of snack 4. Print Customer 2 Cash on hand. Print quantity of snack 4.
+1. Customer 1 finds $10. Print Customer 1 Cash on hand.
+1. Customer 1 buys 1 of snack 2. Print Customer 1 Cash on hand. Print quantity of snack 2.
 1. Snack 3 gets 12 more. Print quantity of snack 3.
 1. Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
