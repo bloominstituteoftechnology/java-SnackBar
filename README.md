@@ -86,7 +86,7 @@ Customer can add cash, buy given total cash used in purchase, get and set name, 
 
     * Display each snack with
         * Name
-	* Vending Machine Name
-	* Quantity on hand
-	* Cost
+        * Vending Machine Name
+        * Quantity on hand
+        * Cost
 	
