@@ -1,10 +1,10 @@
 # Project Snack Bar:
 
-A student the completes this project shows that they can:
+A student that completes this project shows that they can:
 
-* use the Java Development Kit (jdk)
-* construct Java classes
-* Instantiate and use Java Objects
+* use the Java Development Kit (JDK)
+* use and manipulate Java base data types
+* construct Java classes including instantiating and using Java Objects
 * use and manipulate Java base data types
 
 # Introduction
@@ -15,22 +15,54 @@ vending machines where a person buys snacks from those machines.
 
 # Instructions
 
-Snack has id, name, quantity, cost, vending machine id\
-Snack can set name, get quantity, add quantity given quantity, buy snack given quantity, get total cost given a quantity.
+## Snack
 
-Vending machine has id, name\
-Vending Machine set and return name
+Snack has fields (so knows)
+* id
+* name
+* quantity 
+* cost
+* vending machine id
 
-Customer has id, name, cash on hand\
+Snack has methods (so can) 
+* set and get id
+* set and get name
+* set and get cost
+* set and get vending machine id
+* get quantity
+* add quantity when given how many to add
+* buy snack when given how many to buy
+* get total cost given a quantity
+
+
+## Vending Machine
+
+Vending machine has fields (so knows)
+* id
+* name 
+
+Vending Machine has methods (so can)
+* set and get id
+* set and get name
+
+
+## Customer
+
+Customer has id, name, cash on hand. 
 Customer can add cash, buy given total cash used in purchase, get and set name, get cash on hand.  
+
+
+## Instructions
 
 * Instantiate 2 customers
     * Jane with $45.25
     * Bob with $33.14
+
 * Instantiate 3 Vending Machines
     * Food
     * Drink
     * Office
+
 * Instantiate 5 snacks
     * In Vending Machine Food
         * 36 Chips at $1.75
@@ -40,12 +72,18 @@ Customer can add cash, buy given total cash used in purchase, get and set name, 
         * 24 Soda at $2.50
         * 20 Water at $2.75
 	
-Processing
+* Processing
 
 1. Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
 1. Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
 1. Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
 1. Customer 1 finds $10. Print Customer 1 Cash on Hand.
 1. Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity of snack 2.
-1. Snack 3 gets 12 more. Print quantity of snack 3.
+1. Add 12 more items to snack 3. Print quantity of snack 3.
 1. Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
+
+* Stretch Goals
+
+    * Display vending machines
+        * List vending name
+        * List snacks, cost, and quantity in vending machine
