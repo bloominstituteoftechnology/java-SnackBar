@@ -84,6 +84,9 @@ Customer can add cash, buy given total cash used in purchase, get and set name, 
 
 * Stretch Goals
 
-    * Display vending machines
-        * List vending name
-        * List snacks, cost, and quantity in vending machine
+    * Display each snack with
+        * Name
+	* Vending Machine Name
+	* Quantity on hand
+	* Cost
+	
