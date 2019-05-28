@@ -2,75 +2,53 @@ package snackbar;
 
 public class Customer
 {
+	// fields
 	private static int maxId = 0;
 	private int id;
 	private String name;
 	private double cashOnHand;
-	private Boolean addCash;
-	private int buyTotalUsed;
 
-	public Customer(String name, double cashOnHand, Boolean addCash, int buyTotalUsed)
+	//constructor 
+	public Customer(String name, double cashOnHand)
 	{
 		maxId++;
 		id = maxId;
 
 		this.name = name;
 		this.cashOnHand = cashOnHand;
-		this.addCash = addCash;
-		this.buyTotalUsed = buyTotalUsed;
+
 	}
 
-	public int getCashOnHand()
-	{
-		return cashOnHand;
-	}
-
-	public void setCashOnHand()
+	//methods
+	public void addCash(double cashOnHand)
 	{
 		this.cashOnHand = cashOnHand;
 	}
 
+	public void buySnacks(int quantity, Snack snack)
+	{
+		snack.buySnacks(quantity);
+		this.cashOnHand -= snack.getTotalCost(quantity);
+	}
+
+	// gettters
 	public String getName()
 	{
 		return name;
 	}
 
+	public double getCash()
+	{
+		return cashOnHand;
+	}
+
+	//setters
 	public void setName(String name)
 	{
 		this.name = name;
 	}
-
-	public Boolean getAddCash()
-	{
-		return addCash;
-	}
-
-	public void setAddCash(Boolean addCash)
-	{
-		this.addCash = addCash;
-	}
-
-	public int getBuyTotalUsed()
-	{
-		return getBuyTotalUsed;
-	}
-
-	public void setBuyTotalUsed;
-	{
-		this.buyTotalUsed = buyTotalUsed;
-	}
-
-	@Override
-	public String toString()
-	{
-		String rtnStr = "id: " + id + "\n" +
-						"name: " + name + "\n" +
-						"cashOnHand: " + cashOnHand + "\n" +
-						"addCash: " + addCash + "\n" +
-						"buyTotalUsed: " + buyTotalUsed + "\n";
-		return rtnStr;
-	}
-
-
-
 }
+
+
+
+	
