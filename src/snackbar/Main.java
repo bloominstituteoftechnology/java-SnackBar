@@ -19,24 +19,24 @@ public class Main
 
 
 		Snack s4 = new Snack("Soda", 24, 2.50, v2.getId());
-		Snack s5 = new Short("Water", 20, 2.75, v2.getId());
+		Snack s5 = new Snack("Water", 20, 2.75, v2.getId());
 
 		//Processing
-		c1.buySnack(3, s4);
+		c1.buySnacks(3, s4);
         System.out.println("*** Customer 1 Jane Data ***");
         System.out.println("Jane's Cash on Hand: " + c1.getCash());
         System.out.println("Qty of Snack 4: " + s4.getQuantity());
         System.out.println("---------------------");
 
          // Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
-        c1.buySnack(1, s3);
+        c1.buySnacks(1, s3);
         System.out.println("*** Customer 1 Jane Data ***");
         System.out.println("Jane's Cash on Hand: " + c1.getCash());
         System.out.println("Qty of Snack 3: " + s3.getQuantity());
         System.out.println("---------------------");
 
          // Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
-        c2.buySnack(2, s4);
+        c2.buySnacks(2, s4);
         System.out.println("*** Customer 2 Bob Data ***");
         System.out.println("Bob's Cash on Hand: " + c2.getCash());
         System.out.println("Qty of Snack 4: " + s4.getQuantity());
@@ -49,7 +49,7 @@ public class Main
         System.out.println("---------------------");
 
          // Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity of snack 2.
-        c1.buySnack(1, s2);
+        c1.buySnacks(1, s2);
         System.out.println("*** Customer 1 Data ***");
         System.out.println("Customer 1's Cash on Hand: " + c1.getCash());
         System.out.println("Qty of Snack 2: " + s2.getQuantity());
@@ -62,7 +62,7 @@ public class Main
         System.out.println("---------------------");
 
          // Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
-        c2.buySnack(3, s3);
+        c2.buySnacks(3, s3);
         System.out.println("*** Customer 2 Data ***");
         System.out.println("Bob's Cash on Hand: " + c2.getCash());
         System.out.println("Qty of Snack 3: " + s3.getQuantity());
@@ -76,4 +76,3 @@ public class Main
 } 
 
 
-}
