@@ -82,6 +82,7 @@ public class Main
 
         //stretch tasks
         System.out.println("\n****inventory printout*****\n");
+        System.out.println("name | machine | quantity | value");
         System.out.println(chips.getName() + " | " + food.getName() + " | " + chips.getQuantity() + " | " + chips.getCost(chips.getQuantity())); 
         System.out.println(chocolate.getName() + " | " + food.getName() + " | " + chocolate.getQuantity() + " | " + chocolate.getCost(chocolate.getQuantity())); 
         System.out.println(pretzel.getName() + " | " + food.getName() + " | " + pretzel.getQuantity() + " | " + pretzel.getCost(pretzel.getQuantity())); 
