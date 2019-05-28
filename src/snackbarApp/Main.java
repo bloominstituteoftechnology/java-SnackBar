@@ -71,6 +71,21 @@ public class Main
         System.out.println("\n****event*****\n");
         pretzel.addQuantity(12);
         System.out.println("12 Pretzels were added to Inventory");
-        System.out.println("There are " + pretzel.getQuantity() + " in the machine");
+        System.out.println("There are " + pretzel.getQuantity() + " pretzels in the machine");
+
+        System.out.println("\n****order 5*****\n");
+        pretzel.buySnack(3);
+        bob.removeCash(pretzel.getCost(3));
+        System.out.println(bob.getName() + " bought 3 " + pretzel.getName() + "s at the cost of $" + pretzel.getCost(3));
+        System.out.println("There are " + pretzel.getQuantity() + " Pretzel left");
+        System.out.println("Bob has $" + bob.getCash() + " left in the bank");
+
+        //stretch tasks
+        System.out.println("\n****inventory printout*****\n");
+        System.out.println(chips.getName() + " | " + food.getName() + " | " + chips.getQuantity() + " | " + chips.getCost(chips.getQuantity())); 
+        System.out.println(chocolate.getName() + " | " + food.getName() + " | " + chocolate.getQuantity() + " | " + chocolate.getCost(chocolate.getQuantity())); 
+        System.out.println(pretzel.getName() + " | " + food.getName() + " | " + pretzel.getQuantity() + " | " + pretzel.getCost(pretzel.getQuantity())); 
+        System.out.println(soda.getName() + " | " + drink.getName() + " | " + soda.getQuantity() + " | " + soda.getCost(soda.getQuantity())); 
+        System.out.println(water.getName() + " | " + drink.getName() + " | " + water.getQuantity() + " | " + water.getCost(water.getQuantity())); 
     }
 }
