@@ -7,7 +7,7 @@ public class Customer
     private String name;
     private double balance;
 
-    public Customer
+    public Customer(String name, double balance)
     {
         maxId++;
         id = maxId;

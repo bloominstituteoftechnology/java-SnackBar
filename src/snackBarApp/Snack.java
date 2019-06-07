@@ -65,8 +65,18 @@ public class Snack
         this.quantity = quantity - purchased;
     }
 
-    public void getTotal(double quantity)
+    public double getTotal(int quantity)
     {
-        return cost * quantity;
+        return (this.cost) * quantity;
     }
+
+       @Override
+   public String toString()
+   {
+      String rtnStr = "Name: " + name + "\n" + 
+                      "Vending Machine Number: " + vendingMachineID + "\n" +
+                      "Quantity On Hand: " + quantity + "\n" +
+                      "Total cost of all the quantities of this snack on hand: $" + (quantity * cost) + "\n";
+      return rtnStr;
+   }
 }
