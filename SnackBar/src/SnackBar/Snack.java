@@ -50,4 +50,11 @@ public class Snack {
 	public void setVendingMachineId(int vendingMachineId) {
 		this.vendingMachineId = vendingMachineId;
 	}
+
+	@Override
+	public String toString()
+	{
+		String rtnStr = "Name: " + name + "\n" + "Vending Machine ID: " + vendingMachineId + "\n" + "Quantity On Hand: " + quantity + "\n" + "Total Cost of Stock: " + cost * quantity;
+		return rtnStr;
+	}
 }
