@@ -22,6 +22,10 @@ public class Main
 
         System.out.println("*** Data Types - Numbers ***");
         System.out.println("Original divided 5 " + c1.cash / 5);
+
+        jane.addSnack(3, soda);
+        System.out.println("Jane cash: " + jane.getCash());
+        System.out.println(soda.getQuantity() + "Soda left");
     }
     //psvm
     public static void main(String[] args)
