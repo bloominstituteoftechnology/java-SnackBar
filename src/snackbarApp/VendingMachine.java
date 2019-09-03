@@ -4,14 +4,13 @@ public class VendingMachine
 {
     private static int maxId = 0;
 
-    public int id;
-    public String name;
+    private int id;
+    private String name;
     
-    public Snack(String name)
+    public VendingMachine(String name)
     {
         maxId++;
         id = maxId;
-
         this.name = name;
     }
 
