@@ -17,12 +17,26 @@ public class Customer
         this.cash = cash;
 
     }
-    
-    public void addCash(double add)
-    {
-        // double moreCash;
-        // moreCash = cash + cash;
 
+    public void addCash(double cash)
+    {
+        this.cash = cash;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    
+    public void addSnack(int quantity, Snack snack)
+    {
+        snack.addSnack(quantity);
+        this.cash -= snack.getCost(quantity);
     }
 
     @Override

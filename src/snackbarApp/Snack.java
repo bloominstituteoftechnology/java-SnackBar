@@ -77,9 +77,17 @@ public class Snack
 
     public void addQuantity(double add)
     {
-        double addToQuantity;
-        addToQuantity = quantity + quantity;
-        quantity = quantity + addToQuantity;
+        this.quantity += quantity;
+    }
+
+    public double getCost(double quantity) 
+    {
+        return quantity * cost;
+    }
+
+    public void setCost(int cost)
+    {
+        this.cost = cost;
     }
 
     @Override

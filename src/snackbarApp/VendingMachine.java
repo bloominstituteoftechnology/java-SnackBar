@@ -28,4 +28,13 @@ public class VendingMachine
     {
         this.name = name;
     }
+
+    @Override
+    public String toString()
+    {
+        String rtnStr = "id: " + id + "\n" +
+        "name: " + name + "\n";
+
+        return rtnStr;
+    }
 }
