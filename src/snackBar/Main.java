@@ -1,67 +1,106 @@
 package snackBar;
 
 public class Main {
-
-    public static void workWithData() {
-        // Vending machines
-        VendingMachine v1 = new VendingMachine("Food");
-        VendingMachine v2 = new VendingMachine("Drink");
-        VendingMachine v3 = new VendingMachine("Office");
-
-        // Customers
+    public static void main(String[] args) {
+        // set up two customers
         Customer c1 = new Customer("Jane", 45.25);
         Customer c2 = new Customer("Bob", 33.14);
 
-        // Snacks
-        Snack s1 = new Snack("Chips", 36, 1.75, 1);
-        Snack s2 = new Snack("Chocolate Bar", 36, 1.00, 1);
-        Snack s3 = new Snack("Pretzel", 36, 2.00, 1);
-        Snack s4 = new Snack("Soda", 36, 2.50, 2);
-        Snack s5 = new Snack("Water", 36, 2.75, 2);
+        // set up 3 VendingMachines
+        VendingMachines v1 = new VendingMachines("Food");
+        VendingMachines v2 = new VendingMachines("Drink");
+        VendingMachines v3 = new VendingMachines("Office");
 
-        System.out.println("\n=========================\n First Set of Processing \n=========================\n");
-        System.out.println(c1.buy(s4.buySnack(3)));
-        System.out.println(c1.getCashOnHand());
-        System.out.println(s4.getQuantity());
+        // set up 5 snacks
+        Snacks s1 = new Snacks(v1.getId(), "Chips", 1.75, 36);
+        Snacks s2 = new Snacks(v1.getId(), "Chocolate Bar", 1.00, 36);
+        Snacks s3 = new Snacks(v1.getId(), "Pretzel", 2.00, 30);
 
-        System.out.println("\n==========================\n Second Set of Processing \n==========================\n");
-        System.out.println(c1.buy(s3.buySnack(1)));
-        System.out.println(c1.getCashOnHand());
-        System.out.println(s3.getQuantity());
+        Snacks s4 = new Snacks(v2.getId(), "Soda", 2.50, 24);
+        Snacks s5 = new Snacks(v2.getId(), "Water", 2.75, 20);
 
-        System.out.println("\n=========================\n Third Set of Processing \n=========================\n");
-        System.out.println(c2.buy(s4.buySnack(4)));
-        System.out.println(c2.getCashOnHand());
-        System.out.println(s4.getQuantity());
+        // Customer 1 buys 3 of snack 4 (hint: figure out cost of 3 snack 4s - Customer
+        // 1 spends that amount, Snack 4 loses 3 quantity).
+        // Print Customer 1 Cash on hand. Print quantity of snack 4.
+        c1.buy(s4.getTotalCost(3));
+        s4.buySnack(3);
+        System.out.println("Customer 1 cash on hand " + c1.getCash());
+        System.out.println("Quantity of snack 4 is  " + s4.getQuantity());
+        System.out.println();
 
-        System.out.println("\n==========================\n Fourth Set of Processing \n==========================\n");
-        System.out.println(c1.addCash(4));
-        System.out.println(c2.getCashOnHand());
+        // Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity
+        // of snack 3.
+        c1.buy(s3.getTotalCost(1));
+        s3.buySnack(1);
+        System.out.println("Customer 1 cash on hand " + c1.getCash());
+        System.out.println("Quanity of snack 3 is " + s3.getQuantity());
+        System.out.println();
 
-        System.out.println("\n=========================\n Fifth Set of Processing \n=========================\n");
-        System.out.println(c1.buy(s2.buySnack(1)));
-        System.out.println(c1.getCashOnHand());
-        System.out.println(s2.getQuantity());
+        // Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity
+        // of snack 4.
+        c2.buy(s4.getTotalCost(2));
+        s4.buySnack(2);
+        System.out.println("Customer 2 cash on hand " + c2.getCash());
+        System.out.println("Quantity of snack 4 is " + s4.getQuantity());
+        System.out.println();
 
-        System.out.println("\n=========================\n Sixth Set of Processing \n=========================\n");
-        System.out.println(s3.addQuantity(12));
-        System.out.println(s3.getQuantity());
+        // Customer 1 finds $10. Print Customer 1 Cash on Hand.
+        c1.addCash(10.00);
+        System.out.println("Customer 1 cash on hand " + c1.getCash());
+        System.out.println();
 
-        System.out.println("\n===========================\n Seventh Set of Processing \n===========================\n");
-        System.out.println(c2.buy(s3.buySnack(3)));
-        System.out.println(c2.getCashOnHand());
-        System.out.println(s3.getQuantity());
+        // Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity
+        // of snack 2.
+        c1.buy(s2.getTotalCost(1));
+        s2.buySnack(1);
+        System.out.println("Customer 1 cash on hand " + c1.getCash());
+        System.out.println("Quantity of snack 2 is " + s2.getQuantity());
+        System.out.println();
 
-        System.out.println("\n=========\n Stretch \n=========\n");
-        System.out.println(s1.toString(v1.getName()));
-        System.out.println(s2.toString(v1.getName()));
-        System.out.println(s3.toString(v1.getName()));
-        System.out.println(s4.toString(v2.getName()));
-        System.out.println(s5.toString(v2.getName()));
+        // Snack 3 gets 12 more. Print quantity of snack 3.
+        s3.addQuantity(12);
+        System.out.println("Quantity of snack 3 is " + s3.getQuantity());
+        System.out.println();
+
+        // Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity
+        // of snack 3.
+        c2.buy(s3.getTotalCost(3));
+        s3.buySnack(3);
+        System.out.println("customer 2 cash on hand " + c2.getCash());
+        System.out.println("Quantity of snack 3 is " + s3.getQuantity());
+        System.out.println();
+
+        // Stretch Goals
+        System.out.println("Stretch Goals\n");
+
+        System.out.println("Snack: " + s1.getName());
+        System.out.println("Vending Machine: " + v1.getName());
+        System.out.println("Quantity: " + s1.getQuantity());
+        System.out.println("Total Cost: " + s1.getTotalCost(s1.getQuantity()));
+        System.out.println();
+
+        System.out.println("Snack: " + s2.getName());
+        System.out.println("Vending Machine: " + v1.getName());
+        System.out.println("Quantity: " + s2.getQuantity());
+        System.out.println("Total Cost: " + s2.getTotalCost(s2.getQuantity()));
+        System.out.println();
+
+        System.out.println("Snack: " + s3.getName());
+        System.out.println("Vending Machine: " + v1.getName());
+        System.out.println("Quantity: " + s3.getQuantity());
+        System.out.println("Total Cost: " + s3.getTotalCost(s3.getQuantity()));
+        System.out.println();
+
+        System.out.println("Snack: " + s4.getName());
+        System.out.println("Vending Machine: " + v2.getName());
+        System.out.println("Quantity: " + s4.getQuantity());
+        System.out.println("Total Cost: " + s4.getTotalCost(s4.getQuantity()));
+        System.out.println();
+
+        System.out.println("Snack: " + s5.getName());
+        System.out.println("Vending Machine: " + v2.getName());
+        System.out.println("Quantity: " + s5.getQuantity());
+        System.out.println("Total Cost: " + s5.getTotalCost(s5.getQuantity()));
+        System.out.println();
     }
-
-    public static void main(String[] args) {
-        workWithData();
-    }
-
 }

@@ -1,17 +1,17 @@
 package snackBar;
 
 public class Customer {
-
     private static int maxId = 0;
     private int id;
-    private String name;
-    private double cashOnHand;
 
-    public Customer(String name, double cashOnHand) {
+    private String name;
+    private double cash;
+
+    public Customer(String name, double cash) {
         maxId++;
         id = maxId;
         this.name = name;
-        this.cashOnHand = cashOnHand;
+        this.cash = cash;
     }
 
     public String getName() {
@@ -22,20 +22,15 @@ public class Customer {
         this.name = name;
     }
 
-    public String getCashOnHand() {
-        return name + " now has $" + cashOnHand + ".";
+    public double getCash() {
+        return cash;
     }
 
-    public String addCash(double amount) {
-        this.cashOnHand += amount;
-        return name + " added $" + amount + ".";
+    public void addCash(double cash) {
+        this.cash = this.cash + cash;
     }
 
-    public String buy(double purchase) {
-        if (cashOnHand >= purchase) {
-            cashOnHand -= purchase;
-        }
-        return cashOnHand >= purchase ? name + " spent $" + purchase + "." : name + " doesn't have enough money.";
+    public void buy(double cash) {
+        this.cash = this.cash - cash;
     }
-
 }
