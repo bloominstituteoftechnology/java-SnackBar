@@ -60,7 +60,6 @@ public class Main
             * Total cost of all of the quantities of this snack on hand */
         
         // System.out.println(s1.getName() + " is in " + v1.getName() + ". "
-
     }
 
     public static void main(String[] args)
