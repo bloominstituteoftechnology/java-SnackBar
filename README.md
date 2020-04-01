@@ -2,10 +2,10 @@
 
 A student that completes this project shows that they can:
 
-* use the Java Development Kit (JDK)
-* use and manipulate Java base data types
-* construct Java classes including instantiating and using Java Objects
-* use and manipulate Java base data types
+* Understand what makes Java a programming language worth studying
+* Explain the basic concept of Object Oriented Programming and how they relate to Java
+* Create and manipulate the base Java types which include Boolean, byte, char (including Strings), short, int, long, float, and double
+* Craft multiple Java Classes which include comments, constructors, static and instance variables (fields), accessors, public and private methods and instantiate and use Objects of these classes
 
 # Introduction
 
