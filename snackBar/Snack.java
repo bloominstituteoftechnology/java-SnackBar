@@ -50,6 +50,4 @@ public class Snack{
 	public double getCost(double quantity){
 		return quanity * this.cost
 	}
-
-
 }
