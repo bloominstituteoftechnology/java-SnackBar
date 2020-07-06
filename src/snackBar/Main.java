@@ -23,7 +23,7 @@ public class Main{
 	jane.buySnacks(soda.getCost(3.0));
 
 	System.out.println();
-	System.out.println(" Customer " +  jane.getId() + "cash on hand" + " $ " + jane.getCashOnHand());
+	System.out.println(" Customer " +  jane.getId() + " cash on hand" + " $ " + jane.getCashOnHand());
 	System.out.println(" Quantity of snack " + soda.getId() + " is " + soda.getQuantity());
 	System.out.println();
 
@@ -31,7 +31,7 @@ public class Main{
 	jane.buySnacks(pretzel.getCost(1.0));
 
 	System.out.println();
-	System.out.println("Customer" + jane.getId() + "cash on hand" + "$" + jane.getCashOnHand());
+	System.out.println("Customer " + jane.getId() + " cash on hand" + "$" + jane.getCashOnHand());
 	System.out.println("Quantity of snack " + pretzel.getId() + "is" + soda.getQuantity());
 	System.out.println();
 
@@ -39,7 +39,7 @@ public class Main{
 	bob.buySnacks(soda.getCost(2.0));
 
 	System.out.println();
-	System.out.println("Customer" + bob.getId() + "cash on hand" + "$" + bob.getCashOnHand());
+	System.out.println("Customer" + bob.getId() + " cash on hand" + "$" + bob.getCashOnHand());
 	System.out.println("Quantity of snack" + soda.getId() + "is" + soda.getQuantity());
 	System.out.println();
 
@@ -65,13 +65,17 @@ public class Main{
 	bob.buySnacks(pretzel.getCost(3.0));
 
 	System.out.println();
-	System.out.println("Customer" + bob.getId() + "cash on hand" + "$" + bob.getCashOnHand());
+	System.out.println("Customer" + bob.getId() + " cash on hand" + "$" + bob.getCashOnHand());
 	System.out.println("Quantity of snack" + pretzel.getId() + "is"+ pretzel.getQuantity());
 	System.out.println();
 
 	}
 
-	public static void Main(String[] args){
+	//public static void Main(String[] args){
+	//	workWithData();
+	//}
+
+	public static void main(String[] args){
 		workWithData();
 	}
 }
