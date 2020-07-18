@@ -62,16 +62,21 @@ public class Snack {
     quantity += amountToAdd;
   }
 
-  public void buySnack(int amountToBuy) {
+  public double buySnack(int amountToBuy) {
     quantity -= amountToBuy;
+    return cost * amountToBuy;
   }
 
   public double totalCost() {
     return cost * quantity;
   }
 
+  public String printQuantity() {
+    return "Quantity of snack " + id + " is " + quantity + '\n';
+  }
+
   @Override
   public String toString() {
-    return "Snack: " + name + "\nVending Machine: " + vendingMachineid + "\nQuantity: " + quantity + "\nTotal Cost: " + totalCost();
+    return "Snack: " + name + "\nVending Machine: " + vendingMachineid + "\nQuantity: " + quantity + "\nTotal Cost: " + df.format(totalCost());
   }
 }
