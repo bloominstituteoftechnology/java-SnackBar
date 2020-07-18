@@ -9,7 +9,7 @@ public class Main {
     VendingMachine vm1 = new VendingMachine("Food");
     VendingMachine vm2 = new VendingMachine("Drink");
     VendingMachine vm3 = new VendingMachine("Office");
-
+    
     // Snack(String name, int quantity, double cost, int vendingMachineid) 
 
     Snack s1 = new Snack("Chips", 36, 1.75, 1);
@@ -45,10 +45,10 @@ public class Main {
     System.out.println(c2);
     System.out.println(s3.printQuantity());
 
-    // System.out.println(s1);
-    // System.out.println(s2);
-    // System.out.println(s3);
-    // System.out.println(s4);
-    // System.out.println(s5);
+    System.out.println(s1);
+    System.out.println(s2);
+    System.out.println(s3);
+    System.out.println(s4);
+    System.out.println(s5);
   }
 }

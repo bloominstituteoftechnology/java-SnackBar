@@ -77,6 +77,6 @@ public class Snack {
 
   @Override
   public String toString() {
-    return "Snack: " + name + "\nVending Machine: " + vendingMachineid + "\nQuantity: " + quantity + "\nTotal Cost: " + df.format(totalCost());
+    return "Snack: " + name + "\nVending Machine: " + vendingMachineid + "\nQuantity: " + quantity + "\nTotal Cost: " + df.format(totalCost()) + "\n";
   }
 }

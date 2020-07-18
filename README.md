@@ -165,28 +165,28 @@ Create the classes mentioned above and then instantiate these objects from those
   - [x] Drink
   - [x] Office
 
-- [ ] Instantiate 5 snacks
-  - [ ] In Vending Machine Food
-    - [ ] 36 Chips at \$1.75
-    - [ ] 36 Chocolate Bar at \$1.00
-    - [ ] 30 Pretzel at \$2.00
-  - [ ] In Vending Machine Drink
-    - [ ] 24 Soda at \$2.50
-    - [ ] 20 Water at \$2.75
+- [x] Instantiate 5 snacks
+  - [x] In Vending Machine Food
+    - [x] 36 Chips at \$1.75
+    - [x] 36 Chocolate Bar at \$1.00
+    - [x] 30 Pretzel at \$2.00
+  - [x] In Vending Machine Drink
+    - [x] 24 Soda at \$2.50
+    - [x] 20 Water at \$2.75
 
 ### Processing
 
-- [ ] Customer 1 (Jane) buys 3 of snack 4 (Soda).
-  - [ ] Print Customer 1 (Jane) Cash on hand.
-  - [ ] Print quantity of snack 4 (Soda).
-- [ ] Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
-  - [ ] Print Customer 1 (Jane) Cash on hand.
-  - [ ] Print quantity of snack 3 (Pretzel).
-- [ ] Customer 2 (Bob) buys 2 of snack 4 (Soda).
-  - [ ] Print Customer 2 (Bob) Cash on Hand.
-  - [ ] Print quantity of snack 4 (Soda).
-- [ ] Customer 1 (Jane) finds \$10.
-  - [ ] Print Customer 1 (Jane) Cash on Hand.
+- [x] Customer 1 (Jane) buys 3 of snack 4 (Soda).
+  - [x] Print Customer 1 (Jane) Cash on hand.
+  - [x] Print quantity of snack 4 (Soda).
+- [x] Customer 1 (Jane) buys 1 of snack 3 (Pretzel).
+  - [x] Print Customer 1 (Jane) Cash on hand.
+  - [x] Print quantity of snack 3 (Pretzel).
+- [x] Customer 2 (Bob) buys 2 of snack 4 (Soda).
+  - [x] Print Customer 2 (Bob) Cash on Hand.
+  - [x] Print quantity of snack 4 (Soda).
+- [x] Customer 1 (Jane) finds \$10.
+  - [x] Print Customer 1 (Jane) Cash on Hand.
 - [ ] Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
   - [ ] Print Customer 1 (Jane) Cash on Hand.
   - [ ] Print quantity of snack 2 (Chocolate Bar).
@@ -199,10 +199,10 @@ Create the classes mentioned above and then instantiate these objects from those
 ### Stretch Goals
 
 - [ ] Display each snack with
-  - [ ] Name
+  - [x] Name
   - [ ] Vending Machine Name
-  - [ ] Quantity on hand
-  - [ ] Total cost of all of the quantities of this snack on hand
+  - [x] Quantity on hand
+  - [x] Total cost of all of the quantities of this snack on hand
 - [x] Format all dollar amount like \$1,234.56
   - [x] Starts with a dollar sign
   - [x] comma separating group of 3 numbers
