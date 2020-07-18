@@ -187,14 +187,14 @@ Create the classes mentioned above and then instantiate these objects from those
   - [x] Print quantity of snack 4 (Soda).
 - [x] Customer 1 (Jane) finds \$10.
   - [x] Print Customer 1 (Jane) Cash on Hand.
-- [ ] Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
-  - [ ] Print Customer 1 (Jane) Cash on Hand.
-  - [ ] Print quantity of snack 2 (Chocolate Bar).
-- [ ] Add 12 more items to snack 3 (Pretzel).
-  - [ ] Print quantity of snack 3 (Pretzel).
-- [ ] Customer 2 (Bob) buys 3 of snack 3 (Pretzel).
-  - [ ] Print Customer 2 (Bob) Cash on hand.
-  - [ ] Print quantity of snack 3 (Pretzel).
+- [x] Customer 1 (Jane) buys 1 of snack 2 (Chocolate Bar).
+  - [x] Print Customer 1 (Jane) Cash on Hand.
+  - [x] Print quantity of snack 2 (Chocolate Bar).
+- [x] Add 12 more items to snack 3 (Pretzel).
+  - [x] Print quantity of snack 3 (Pretzel).
+- [x] Customer 2 (Bob) buys 3 of snack 3 (Pretzel).
+  - [x] Print Customer 2 (Bob) Cash on hand.
+  - [x] Print quantity of snack 3 (Pretzel).
 
 ### Stretch Goals
 
