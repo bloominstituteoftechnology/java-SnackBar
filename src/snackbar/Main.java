@@ -1,5 +1,10 @@
 package snackbar;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
   public static void main(String[] args) {
@@ -10,13 +15,24 @@ public class Main {
     VendingMachine vm2 = new VendingMachine("Drink");
     VendingMachine vm3 = new VendingMachine("Office");
     
-    // Snack(String name, int quantity, double cost, int vendingMachineid) 
+    Map<Integer, VendingMachine> machines = new HashMap<>();
+    machines.put(vm1.getId(), vm1);
+    machines.put(vm2.getId(), vm2);
+    machines.put(vm3.getId(), vm3);
 
     Snack s1 = new Snack("Chips", 36, 1.75, 1);
     Snack s2 = new Snack("Chocolate Bar", 36, 1, 1);
     Snack s3 = new Snack("Pretzel", 30, 2, 1);
     Snack s4 = new Snack("Soda", 24, 2.5, 2);
     Snack s5 = new Snack("Water", 20, 2.75, 2);
+
+    List<Snack> snacks = new ArrayList<>();
+
+    snacks.add(s1);
+    snacks.add(s2);
+    snacks.add(s3);
+    snacks.add(s4);
+    snacks.add(s5);
 
     c1.buySnacks(s4.buySnack(3));
     System.out.println(c1);
@@ -45,10 +61,8 @@ public class Main {
     System.out.println(c2);
     System.out.println(s3.printQuantity());
 
-    System.out.println(s1);
-    System.out.println(s2);
-    System.out.println(s3);
-    System.out.println(s4);
-    System.out.println(s5);
+    for (Snack s : snacks) {
+      System.out.println(s.stretch(machines.get(s.getVendingMachineid()).getName()));
+    }
   }
 }

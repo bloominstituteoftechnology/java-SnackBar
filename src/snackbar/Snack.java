@@ -79,4 +79,8 @@ public class Snack {
   public String toString() {
     return "Snack: " + name + "\nVending Machine: " + vendingMachineid + "\nQuantity: " + quantity + "\nTotal Cost: " + df.format(totalCost()) + "\n";
   }
+
+  public String stretch(String vendingMachineName) {
+    return "Snack: " + name + "\nVending Machine: " + vendingMachineName + "\nQuantity: " + quantity + "\nTotal Cost: " + df.format(totalCost()) + "\n";
+  }
 }

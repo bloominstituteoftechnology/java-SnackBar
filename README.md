@@ -198,9 +198,9 @@ Create the classes mentioned above and then instantiate these objects from those
 
 ### Stretch Goals
 
-- [ ] Display each snack with
+- [x] Display each snack with
   - [x] Name
-  - [ ] Vending Machine Name
+  - [x] Vending Machine Name
   - [x] Quantity on hand
   - [x] Total cost of all of the quantities of this snack on hand
 - [x] Format all dollar amount like \$1,234.56
