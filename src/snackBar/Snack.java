@@ -66,12 +66,21 @@ public class Snack
     // OTHER METHODS
 
     // add quantity when given how many to add
+    public void addQuantity(int num1)
+    {
+        this.quantity = quantity + num1;
+    }
 
     // buy snack when given how many to buy
-    
 
-    public double totalCost()
+
+    public void totalCost(double amnt)
     {
-        return cost * quantity;
+        this.cost = cost * amnt;
+    }
+
+    public void buySnack(int num1)
+    {
+        this.quantity = quantity - num1;
     }
 }

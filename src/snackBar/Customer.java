@@ -9,8 +9,7 @@ public class Customer
 
     // CONSTRUCTOR
 
-    public Customer(String name, double cashOnHand)
-    {
+    public Customer(String name, double cashOnHand) {
         maxId++;
         id = maxId;
         this.name = name;
@@ -19,30 +18,32 @@ public class Customer
 
     // GETTERS
 
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public double getCashOnHand()
-    {
+    public double getCashOnHand() {
         return cashOnHand;
     }
 
     // SETTERS
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setCashOnHand(double cashOnHand)
+    // OTHER METHODS
+
+    public void addCash(double num1) {
+        this.cashOnHand = cashOnHand + num1;
+    }
+
+    public void buySnacks(double totalCost)
     {
-        this.cashOnHand = cashOnHand;
+        this.cashOnHand = cashOnHand - totalCost;
     }
 }
