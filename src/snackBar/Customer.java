@@ -38,12 +38,12 @@ public class Customer
 
     // OTHER METHODS
 
-    public void addCash(double num1) {
-        this.cashOnHand = cashOnHand + num1;
+    public double addCash(double num1) {
+        return this.cashOnHand = cashOnHand + num1;
     }
 
-    public void buySnacks(double totalCost)
+    public double buySnacks(double totalCost)
     {
-        this.cashOnHand = cashOnHand - totalCost;
+        return this.cashOnHand = cashOnHand - totalCost;
     }
 }

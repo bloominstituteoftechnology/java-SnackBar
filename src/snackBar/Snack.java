@@ -74,9 +74,10 @@ public class Snack
     // buy snack when given how many to buy
 
 
-    public void totalCost(double amnt)
+    public double totalCost(double amnt)
     {
-        this.cost = cost * amnt;
+        double totalCost = this.cost * amnt;
+        return totalCost;
     }
 
     public void buySnack(int num1)
