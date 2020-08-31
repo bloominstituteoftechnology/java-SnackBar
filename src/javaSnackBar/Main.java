@@ -1,4 +1,5 @@
 package javaSnackBar;
+import java.text.DecimalFormat;
 
 /*
     Snack
@@ -80,7 +81,40 @@ public class Main
 
 
 
+        System.out.println();
+        System.out.println("Stretch Goals");
+        System.out.println();
 
+        DecimalFormat dFormat = new DecimalFormat("$####,###,###.00");
+        
+        System.out.println("Snack: " + chips.getName());
+        System.out.println("Vending Machine: " + food.getName());
+        System.out.println("Quantity: " + chips.getQuantity());
+        System.out.println("Total Cost: " + dFormat.format(chips.getTotalCostWithQuantity(chips.getQuantity())));
+
+        System.out.println();
+        System.out.println("Snack: " + chocolateBar.getName());
+        System.out.println("Vending Machine: " + food.getName());
+        System.out.println("Quantity: " + chocolateBar.getQuantity());
+        System.out.println("Total Cost: " + dFormat.format(chocolateBar.getTotalCostWithQuantity(chocolateBar.getQuantity())));
+
+        System.out.println();
+        System.out.println("Snack: " + pretzel.getName());
+        System.out.println("Vending Machine: " + food.getName());
+        System.out.println("Quantity: " + pretzel.getQuantity());
+        System.out.println("Total Cost: " + dFormat.format(pretzel.getTotalCostWithQuantity(pretzel.getQuantity())));
+
+        System.out.println();
+        System.out.println("Snack: " + soda.getName());
+        System.out.println("Vending Machine: " + drink.getName());
+        System.out.println("Quantity: " + soda.getQuantity());
+        System.out.println("Total Cost: " + dFormat.format(soda.getTotalCostWithQuantity(soda.getQuantity())));
+
+        System.out.println();
+        System.out.println("Snack: " + water.getName());
+        System.out.println("Vending Machine: " + drink.getName());
+        System.out.println("Quantity: " + water.getQuantity());
+        System.out.println("Total Cost: " + dFormat.format(water.getTotalCostWithQuantity(water.getQuantity())));
     } 
     public static void main(String[] args)
     {
