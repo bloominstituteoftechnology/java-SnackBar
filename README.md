@@ -149,7 +149,7 @@ Total Cost: $55.00
 
 * [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
 
-### Task 2: MVP
+### Task 2a: MVP
 
 ### The Objects Needed
 
