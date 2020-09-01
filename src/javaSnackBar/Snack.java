@@ -50,6 +50,11 @@ public class Snack
         return vendingMachineId;
     }
     
+    public double getTotalCostWithQuantity(int num)
+    {
+        return cost * num;
+    }
+
     // setters
     public void setName(String name)
     {
@@ -76,9 +81,4 @@ public class Snack
         this.quantity -= buyQuantity;
     }
 
-
-    public double getTotalCostWithQuantity(int num)
-    {
-        return cost * num;
-    }
 }
