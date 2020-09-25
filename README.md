@@ -70,24 +70,24 @@ Customer has methods (so can)
 The MVP of this application would produce the following output
 
 ```TEXT
-Customer 1 cash on hand 37.75
-Quantity of snack 4 is 21
+Jane cash on hand 37.75
+Quantity of Soda is 21
 
-Customer 1 cash on hand 35.75
-Quanity of snack 3 is 29
+Jane cash on hand 35.75
+Quantity of Pretzel is 29
 
-Customer 2 cash on hand 28.14
-Quantity of snack 4 is 19
+Bob cash on hand 28.14
+Quantity of Soda is 19
 
-Customer 1 cash on hand 45.75
+Jane cash on hand 45.75
 
-Customer 1 cash on hand 44.75
-Quantity of snack 2 is 35
+Jane cash on hand 44.75
+Quantity of Chocolate Bar is 35
 
-Quantity of snack 3 is 41
+Quantity of Pretzel is 41
 
-customer 2 cash on hand 22.14
-Quantity of snack 3 is 38
+Bob cash on hand 22.14
+Quantity of Pretzel is 38
 ```
 
 ### Stretch Goals
@@ -95,24 +95,24 @@ Quantity of snack 3 is 38
 The Stretch Goals would produce the following output. Yes output from the MVP is included in this output!
 
 ```TEXT
-Customer 1 cash on hand $37.75
-Quantity of snack 4 is 21
+Jane cash on hand $37.75
+Quantity of Soda is 21
 
-Customer 1 cash on hand $35.75
-Quanity of snack 3 is 29
+Jane cash on hand $35.75
+Quantity of Pretzel is 29
 
-Customer 2 cash on hand $28.14
-Quantity of snack 4 is 19
+Bob cash on hand $28.14
+Quantity of Soda is 19
 
-Customer 1 cash on hand $45.75
+Jane cash on hand $45.75
 
-Customer 1 cash on hand $44.75
-Quantity of snack 2 is 35
+Jane cash on hand $44.75
+Quantity of Chocolate Bar is 35
 
-Quantity of snack 3 is 41
+Quantity of Pretzel is 41
 
-customer 2 cash on hand $22.14
-Quantity of snack 3 is 38
+Bob cash on hand $22.14
+Quantity of Pretzel is 38
 
 Stretch Goals
 
@@ -145,6 +145,8 @@ Total Cost: $55.00
 ## Instructions
 
 * [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
+* [ ] When you are done, create a Pull Request (PR)
+* [ ] To submit the assignment, paste the URL of your branch into the assignment module in Canvas.
 
 ### The Objects Needed
 
