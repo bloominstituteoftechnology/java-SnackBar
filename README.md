@@ -67,7 +67,7 @@ Customer has methods (so can)
 
 ## Instructions
 
-### Task 2a: MVP
+### Task 2: MVP
 
 The MVP of this application would produce the following output
 
@@ -151,7 +151,7 @@ Total Cost: $55.00
 * [ ] When you are done, create a Pull Request (PR)
 * [ ] To submit the assignment, paste the URL of your branch into the assignment module in Canvas.
 
-### Task 2a: MVP
+### Task 2: MVP
 
 ### The Objects Needed
 
@@ -201,12 +201,6 @@ Create the classes mentioned above and then instantiate these objects from those
   * [ ] Print Customer 2 (Bob) Cash on hand.
   * [ ] Print quantity of snack 3 (Pretzel).
   
-### Task 2b: Exit Ticket
-
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/t5zh9S62mRL4A4YiL/dcw6eAGjQ8Bg62).
-
-The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
-
 ### Task 3: Stretch Goals
 
 * [ ] Display each snack with
