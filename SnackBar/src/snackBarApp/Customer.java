@@ -6,9 +6,9 @@ public class Customer
 
     private int id;
     private String name;
-    private float cash;
+    private double cash;
     
-    public Customer(String name, float cash)
+    public Customer(String name, double cash)
     {
         id = ++maxId;
         this.name = name;
@@ -26,15 +26,15 @@ public class Customer
     {
       return name;
     }
-    public void addCash(int amount)
+    public void addCash(double amount)
     {
         cash += amount;
     }
-    public getCash()
+    public double getCash()
     {
         return cash;
     }
-    public buySnacks(int total) {
+    public void buySnacks(double total) {
         cash -= total;
     }
 }

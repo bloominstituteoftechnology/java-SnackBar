@@ -7,11 +7,11 @@ public class Snack
     private int id;
     private String name;
     private int quantity;
-    private float cost;
+    private double cost;
     private int machineId;
 
     // constructor
-    public Snack(String name, int quantity, float cost, int machineId)
+    public Snack(String name, int quantity, double cost, int machineId)
     {
         this.id = ++maxId;
 
@@ -21,7 +21,7 @@ public class Snack
         this.machineId = machineId;
     }
 
-    public int getName()
+    public String getName()
     {
         return name;
     }
@@ -41,11 +41,11 @@ public class Snack
     {
         quantity += amount;
     }
-    public int getCost()
+    public double getCost()
     {
         return cost;
     }
-    public void setCost(float cost)
+    public void setCost(double cost)
     {
         this.cost = cost;
     }
@@ -57,12 +57,12 @@ public class Snack
     {
         this.machineId = machineId;
     }
-    public float buySnacks(int amount)
+    public double buySnacks(int amount)
     {
         quantity -= amount;
         return amount * cost;
     }
-    public float getTotal(int amount)
+    public double getTotal(int amount)
     {
         return amount * cost;
     }
