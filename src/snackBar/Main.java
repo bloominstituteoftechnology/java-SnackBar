@@ -22,11 +22,43 @@ public class Main {
         Snack chocolate = new Snack("Chocolate Bar", 36, 1.00, food.getId());
         Snack water = new Snack("Water", 20, 2.75, drink.getId());
 
-
+        // subtract the cost of Soda * three with with jane initial's money on hand
+        jane.setCash(jane.getCash() - soda.getCost() * 3);
+        // print our the jane's money on hand
         System.out.println(jane.getName() + " " + "cash on hand" + " " + jane.getCash());
+        // subtract three from soda
+        soda.setQuantity(soda.getQuantity() - 3);
+        // print out the quantity of sodas left
         System.out.println("Quantity of" + " " + soda.getName() + " " + "is" + " " + soda.getQuantity());
-        System.out.println(bob.getName() + " " + "cash on hand" + " " + bob.getCash());
+
+        // subtract the cost of pretzel * 1 with with jane initial's money on hand
+        jane.setCash(jane.getCash() - pretzel.getCost());
+        // print our the jane's money on hand
+        System.out.println(jane.getName() + " " + "cash on hand" + " " + jane.getCash());
+        pretzel.setQuantity(pretzel.getQuantity() - 1);
         System.out.println("Quantity of" + " " + pretzel.getName() + " " + "is" + " " + pretzel.getQuantity());
+
+        bob.setCash(bob.getCash() - soda.getCost() * 2);
+        System.out.println(bob.getName() + " " + "cash on hand" + " " + bob.getCash());
+        soda.setQuantity(soda.getQuantity() - 2);
+        System.out.println("Quantity of" + " " + soda.getName() + " " + "is" + " " + soda.getQuantity());
+
+        jane.setCash(jane.getCash() + 10);
+        System.out.println(jane.getName() + " " + "cash on hand" + " " + jane.getCash());
+
+        jane.setCash(jane.getCash() - chocolate.getCost());
+        System.out.println(jane.getName() + " " + "cash on hand" + " " + jane.getCash());
+        chocolate.setQuantity(chocolate.getQuantity() - 1);
+        System.out.println("Quantity of" + " " + chocolate.getName() + " " + "is" + " " + chocolate.getQuantity());
+
+        pretzel.setQuantity(pretzel.getQuantity() + 12);
+        System.out.println("Quantity of" + " " + pretzel.getName() + " " + "is" + " " + pretzel.getQuantity());
+
+        bob.setCash(bob.getCash() - pretzel.getCost() * 3);
+        System.out.println(bob.getName() + " " + "cash on hand" + " " + bob.getCash());
+        pretzel.setQuantity(pretzel.getQuantity() - 3);
+        System.out.println("Quantity of" + " " + pretzel.getName() + " " + "is" + " " + pretzel.getQuantity());
+
     }
 
     public static void main(String[] args) {

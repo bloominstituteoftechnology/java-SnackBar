@@ -52,9 +52,12 @@ public class Snack {
         this.vending_id = vending_id;
     }
 
-//    add quantity when given how many to add
+//    add quantity when given how many to add (add to quantity)
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
-//    buy snack when given how many to buy
+//    buy snack when given how many to buy ()
 
 //    get total cost given a quantity
 }

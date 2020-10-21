@@ -43,7 +43,9 @@ public class Customer {
 //    add cash to cash on hand
 
 //    Given the total cost of the snacks to be purchased, reduce the cash on hand by that amount
-
+    public void setCash(double cash) {
+        this.cash = cash;
+    }
 
 
 
