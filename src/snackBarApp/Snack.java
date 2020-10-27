@@ -60,4 +60,14 @@ public class Snack {
   }
 ///////>>ask about buy snack method and what differentiates it from add quantity?
 
+@Override
+public String toString() {
+  String rtnStr = "id: " + id + "\n" +
+    "name: " + name + "\n" +
+    "quantity: " + quantity + "\n" +
+    "cost: " + cost + "\n" +
+    "vmId: " + vmId;
+    return rtnStr;
+
+}
 }
