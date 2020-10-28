@@ -55,10 +55,22 @@ public class Snack {
     return cost * quantity;
   }
 
-  public int addQuantity(int num) {
-    return quantity + num;
+  public void addQuantity(int num) {
+    this.quantity = this.quantity + num;
   }
+
 ///////>>ask about buy snack method and what differentiates it from add quantity?
+
+public void buySnack(int amount)
+{
+  this.quantity = this.quantity - amount;
+}
+
+public double getTotal(int amount)
+{
+  double totalCost = this.cost * amount;
+  return totalCost;
+}
 
 @Override
 public String toString() {

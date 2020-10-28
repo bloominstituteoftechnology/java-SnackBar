@@ -30,12 +30,13 @@ public class Customer {
     this.name = name;
   }
 
-  public int addCash(int num) {
-    return cash + num;
+  public int addCash(double num) {
+    this.cash = this.cash + num;
   }
+
   ////////check this tomorrow(!)
 
-  public double buySnacks(double cost) {
-    return cash - cost;
+  public void buySnacks(double num) {
+    this.cash = this.cash - num;
   }
 }
