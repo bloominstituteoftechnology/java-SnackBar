@@ -18,20 +18,17 @@ public class Main
     Snack soda = new Snack("Soda", 24, vm2.getId(), 2.50);
     Snack water = new Snack("Water", 20, vm2.getId(), 2.75);
 
-    jane.removeCash(soda.getTotalCost(3));
-    soda.buy(3);
+    jane.removeCash(soda.buy(3));
     System.out.println(jane);
     System.out.println(soda.getQuantityString());
     System.out.println();
 
-    jane.removeCash(pretzel.getTotalCost(1));
-    pretzel.buy(1);
+    jane.removeCash(pretzel.buy(1));
     System.out.println(jane);
     System.out.println(pretzel.getQuantityString());
     System.out.println();
 
-    bob.removeCash(soda.getTotalCost(2));
-    soda.buy(2);
+    bob.removeCash(soda.buy(2));
     System.out.println(bob);
     System.out.println(soda.getQuantityString());
     System.out.println();
@@ -40,8 +37,7 @@ public class Main
     System.out.println(jane);
     System.out.println();
 
-    jane.removeCash(chocolate.getTotalCost(1));
-    chocolate.buy(1);
+    jane.removeCash(chocolate.buy(1));
     System.out.println(jane);
     System.out.println(chocolate.getQuantityString());
     System.out.println();
@@ -50,8 +46,7 @@ public class Main
     System.out.println(pretzel.getQuantityString());
     System.out.println();
 
-    bob.removeCash(pretzel.getTotalCost(3));
-    pretzel.buy(3);
+    bob.removeCash(pretzel.buy(3));
     System.out.println(bob);
     System.out.println(pretzel.getQuantityString());
   }

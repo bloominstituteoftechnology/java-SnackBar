@@ -61,9 +61,10 @@ public class Snack
     quantity += additional;
   }
 
-  public void buy(int removed)
+  public double buy(int removed)
   {
     quantity -= removed;
+    return getTotalCost(removed);
   }
 
   public double getTotalCost(int amount)
