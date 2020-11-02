@@ -71,6 +71,12 @@ public class Snack
     return cost * amount;
   }
 
+  public String getQuantityString()
+  {
+    return "Quantity of " + name + " is " + quantity;
+
+  }
+
   @Override
   public String toString()
   {

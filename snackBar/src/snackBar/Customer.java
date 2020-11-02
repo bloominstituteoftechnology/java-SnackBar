@@ -34,6 +34,11 @@ public class Customer
     return cash;
   }
 
+  public void addCash(double added)
+  {
+    cash += added;
+  }
+
   public void removeCash(double removed)
   {
     cash -= removed;
