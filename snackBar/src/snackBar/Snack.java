@@ -77,10 +77,4 @@ public class Snack
     return "Quantity of " + name + " is " + quantity;
 
   }
-
-  @Override
-  public String toString()
-  {
-    return "Quantity of " + name + " is " + quantity;
-  }
 }

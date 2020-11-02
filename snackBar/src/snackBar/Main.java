@@ -8,6 +8,8 @@ public class Main
     VendingMachine vm1 = new VendingMachine("Food");
     VendingMachine vm2 = new VendingMachine("Drink");
     VendingMachine vm3 = new VendingMachine("Office");
+    VendingMachine[] vms =
+    { vm1, vm2, vm3 };
 
     Customer jane = new Customer("Jane", 45.25);
     Customer bob = new Customer("Bob", 33.14);
@@ -49,6 +51,34 @@ public class Main
     bob.removeCash(pretzel.buy(3));
     System.out.println(bob);
     System.out.println(pretzel.getQuantityString());
+    System.out.println();
+
+    printSnack(chips, vms);
+    printSnack(chocolate, vms);
+    printSnack(pretzel, vms);
+    printSnack(soda, vms);
+    printSnack(water, vms);
+  }
+
+  private static void printSnack(Snack snack, VendingMachine[] vms)
+  {
+    int qty = snack.getQuantity();
+    int vmId = snack.getVendingMachineId();
+    System.out.println("Snack: " + snack.getName());
+    System.out.println("Quantity: " + qty);
+    String vmName="";
+    for (int i = 0; i < vms.length; i++)
+    {
+      if (vms[i].getId() == vmId)
+      {
+        vmName = vms[i].getName();
+        break;
+      }
+    }
+    System.out.println("Vending Machine: " + vmName);
+    System.out.print("Total Cost: $");
+    System.out.printf("%5.2f%n", snack.getTotalCost(qty));
+    System.out.println();
   }
 
   public static void main(String[] args)
