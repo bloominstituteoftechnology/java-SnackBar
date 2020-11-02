@@ -38,4 +38,10 @@ public class Customer
   {
     cash -= removed;
   }
+
+  @Override
+  public String toString()
+  {
+    return name + " cash on hand $" + cash;
+  }
 }

@@ -70,4 +70,10 @@ public class Snack
   {
     return cost * amount;
   }
+
+  @Override
+  public String toString()
+  {
+    return "Quantity of " + name + " is " + quantity;
+  }
 }
