@@ -76,8 +76,7 @@ public class Main
       }
     }
     System.out.println("Vending Machine: " + vmName);
-    System.out.print("Total Cost: $");
-    System.out.printf("%5.2f%n", snack.getTotalCost(qty));
+    System.out.printf("Total Cost: $%,.2f\n", snack.getTotalCost(qty));
     System.out.println();
   }
 
