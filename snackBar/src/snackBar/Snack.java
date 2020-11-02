@@ -7,7 +7,7 @@ public class Snack
   private double cost;
   private String name;
 
-  public Snack(int quantity, int vendingMachineId, double cost, String name)
+  public Snack(String name, int quantity, int vendingMachineId, double cost)
   {
     id = maxId++;
     this.quantity = quantity;
