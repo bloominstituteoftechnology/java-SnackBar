@@ -13,6 +13,7 @@ Variations on the Snack Bar Project have been part of Java Education since Java 
 
 Classes should include:
 
+- [x] Initial commit
 ### Snack
 
 Snack has fields (so knows)
