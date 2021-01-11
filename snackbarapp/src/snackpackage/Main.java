@@ -24,7 +24,7 @@ public class Main
 
 		//initialize snack state
 		Snack s1 = new Snack("Muffin", 2, 1.50, vend1.getId());
-		Snack s2 = new Snack("Doritos", 1, 1.75, vend2.getId());
+		Snack s2 = new Snack("Water", 1, 1.75, vend2.getId());
 		Snack s3 = new Snack("Almond Joy", 2, .50, vend3.getId());
 
 		//purchasing a snack
