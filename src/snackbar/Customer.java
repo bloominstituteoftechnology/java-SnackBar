@@ -2,22 +2,30 @@ package snackbar;
 
 public class Customer {
   // Fields
+  private int maxId;
+  private int id;
   private String name;
-  private double money;
+  private double cashOnHand;
 
   // Constructor
-  public Customer(String name, double money) {
+  public Customer(int maxId, String name, double cashOnHand) {
+    this.maxId = maxId;
+    this.id = this.maxId + 1;
     this.name = name;
-    this.money = money;
+    this.cashOnHand = cashOnHand;
   }
 
   // Getters
+  public int getId() {
+    return id;
+  }
+
   public String getName() {
     return name;
   }
 
-  public double getMoney() {
-    return money;
+  public double getCashOnHand() {
+    return cashOnHand;
   }
 
   // Setters
@@ -25,8 +33,12 @@ public class Customer {
     this.name = newName;
   }
 
-  public void setMoney(double newMoney) {
-    this.money = newMoney;
+  // Methods
+  public void addCashOnHand(double cash) {
+    this.cashOnHand += cash;
   }
 
+  public void buySnack(double priceOfSnack) {
+    this.cashOnHand -= priceOfSnack;
+  }
 }
