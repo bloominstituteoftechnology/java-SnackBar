@@ -4,16 +4,16 @@ A student that completes this project shows that they can:
 
 * install the software needed for the Java Course
 * understand what makes Java a programming language worth studying
-* explain the basic concept of Object Oriented Programming and how they relate to Java
-* create and manipulate the base Java types which include Boolean, byte, char (including Strings), short, int, long, float, and double
+* explain the basic concept of Object-Oriented Programming and how they relate to Java
+* create and manipulate the base Java types, which include Boolean, byte, char (including Strings), short, int, long, float, and double
 * craft multiple Java Classes which include comments, constructors, static and instance variables (fields), accessors, public and private methods and instantiate and use Objects of these classes
 * implement and use the String and Date data types
 
 ## Introduction
 
-In this project, you will create a few different Java classes to represent a snack bar in a Java program. Variations on the snack bar porject have long been a part of learning Java–ever since Java was first created.
+In this project, you will create a few different Java classes to represent a snack bar in a Java program. Variations on the snack bar project have long been a part of learning Java–ever since Java was first created.
 
-At a high level, you will create snacks, vending machines, and customers. You will craft these classes so that all of these objects can interact with each other and keep track of their individual states.
+At a high level, you will create snacks, vending machines, and customers. You will craft these classes so that all of these objects can interact with each other and keep track of their states.
 
 ## Instructions and Completion Requirements
 
@@ -47,13 +47,13 @@ Snack has methods (so can):
 
 ### VendingMachine Class Specs
 
-Vending machine has fields (so knows):
+VendingMachine has fields (so knows):
 
 * maxId - keep track of last used vending machine id
 * id - automatically generated field
 * name
 
-Vending Machine has methods (so can):
+VendingMachine has methods (so can):
 
 * get id
 * set and get name
@@ -135,7 +135,7 @@ Now, that you've instantiated some objects and your program has a "state", you n
   * [ ] Print quantity of pretzel
     * [ ] `Quantity of pretzel is 38`
 
-The stretch goals for this project are to produce the following output
+The stretch goals for this project are:
 
 * [ ] Display each snack with
   * [ ] Name
@@ -147,7 +147,7 @@ The stretch goals for this project are to produce the following output
   * [ ] comma separating group of 3 numbers
   * [ ] rounded to the nearest cents, hundredths place
 
-For example, if you complete all of the steps above, your output for the stretch goals would look like:
+For example, if you complete all of the steps above, your output for the stretch goals would look like this:
 
 ```TEXT
 Snack: Chips
