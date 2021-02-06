@@ -1,8 +1,6 @@
 package project;
 
-
-public class Snack
-{
+public class Snack {
     // fields
     private static int maxId = 0;
     private int id;
@@ -21,61 +19,50 @@ public class Snack
         this.vendingMachineId = vendingMachineId;
     }
 
-
     // getters and setters
-    public int getId()
-    {
+    public int getId() {
         return id;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public void setname(String name)
-    {
+    public void setname(String name) {
         this.name = name;
     }
 
-    public double getCost()
-    {
+    public double getCost() {
         return cost;
     }
 
-    public void setCost(double cost)
-    {
+    public void setCost(double cost) {
         this.cost = cost;
     }
 
-    public int getVendingMachineId()
-    {
+    public int getVendingMachineId() {
         return vendingMachineId;
     }
 
-    public void setVendingMachineId(int vendingMachineId)
-    {
+    public void setVendingMachineId(int vendingMachineId) {
         this.vendingMachineId = vendingMachineId;
     }
 
-    public int getQuantity(){
+    public int getQuantity() {
         return quantity;
     }
 
     // standard methods outside of getters and settings for snack class
-    public void addQuantity(int quantity)
-    {
+    public void addQuantity(int quantity) {
         this.quantity += quantity;
     }
 
-    public void buySnack(int quantity)
-    {
+    public void buySnack(int quantity) {
         this.quantity -= quantity;
     }
 
-    public double totalCostGivenQuantity(int quantity)
-    {
-        return cost + quantity;    
+    public double totalCostGivenQuantity(int quantity) {
+        return cost + quantity;
     }
 
 }
