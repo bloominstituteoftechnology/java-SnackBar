@@ -33,12 +33,14 @@ public class Customer {
         cashOnHand += extraCash;
     }
 
-    public double getCashOnHand() {
-        return cashOnHand;
+    public String getCashOnHand() {
+        String coh = String.valueOf(cashOnHand);
+        String rtnCashOnHand = name + " cash on hand " + coh;
+        return rtnCashOnHand;
     }
 
     public void buySnack(double totalCost) {
-        cashOnHand -= totalCost;
+        cashOnHand = cashOnHand - totalCost;
         // Might want to think about a customer not having enough money for snacks
     }
 }

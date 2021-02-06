@@ -48,8 +48,10 @@ public class Snack {
         this.vendingMachineId = vendingMachineId;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getQuantity() {
+        String q = Integer.toString(quantity);
+        String rtnQuantity = "Quantity of " + name + " is " + " " + q;
+        return rtnQuantity;
     }
 
     // standard methods outside of getters and settings for snack class
@@ -62,7 +64,8 @@ public class Snack {
     }
 
     public double totalCostGivenQuantity(int quantity) {
-        return cost + quantity;
+        double q = quantity;
+        return this.cost * q;
     }
 
 }
