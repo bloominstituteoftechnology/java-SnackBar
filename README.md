@@ -147,9 +147,9 @@ Total Cost: $55.00
 
 ## Instructions (Part B)
 
-* [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
-* [ ] When you are done, create a Pull Request (PR)
-* [ ] To submit the assignment, paste the URL of your branch into the assignment module in Canvas.
+* [x] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
+* [x] When you are done, create a Pull Request (PR)
+* [x] To submit the assignment, paste the URL of your branch into the assignment module in Canvas.
 
 ### Task 2: MVP
 
