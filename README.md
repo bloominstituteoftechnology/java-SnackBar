@@ -29,24 +29,24 @@ Snack has methods (so can)
 * get id ✔️
 * set and get name ✔️
 * set and get cost ✔️
-* set and get vending machine id
-* get quantity
-* add quantity when given how many to add
-* buy snack when given how many to buy
-* get total cost given a quantity
+* set and get vending machine id ✔️
+* get quantity✔️
+* add quantity when given how many to add✔️
+* buy snack when given how many to buy✔️
+* get total cost given a quantity✔️
 
 ### VendingMachine
 
 Vending machine has fields (so knows)
 
-* maxId - keep track of last used vending machine id
-* id - automatically generated field
-* name
+* maxId - keep track of last used vending machine id ✔️
+* id - automatically generated field ✔️
+* name ✔️
 
 Vending Machine has methods (so can)
 
-* get id
-* set and get name
+* get id ✔️
+* set and get name ✔️
 
 ### Customer
 
