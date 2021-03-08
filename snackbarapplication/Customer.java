@@ -32,4 +32,20 @@ public class Customer
     {
         return cashOnHand;
     }
+
+    //setters
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public void addCash(double addCash)
+    {
+        this.cashOnHand += addCash;
+    }
+    public void buySnack(int snackQuantity, double snackCost)
+    {
+        this.cashOnHand -= snackCost * snackQuantity;
+    }
 }
