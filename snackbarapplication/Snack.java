@@ -1,87 +1,84 @@
 package snackbarapplication;
 
-public class Snack 
+public class Snack
 {
-    //fields
+  private static int maxId = 0;
 
-    private static int maxId = 0;
-    private int id;
-    private String name;
-    private int quantity;
-    private double cost;
-    private int vendMId;
+  private int id;
+  private String name;
+  private int quantity;
+  private double cost;
+  private int vendingMachineId;
 
-    //constructor 
+// Constructor
+  public Snack(String name, int quantity, double cost, int vendingMachineId)
+  {
+    maxId++;
+    id = maxId;
 
-    public Snack(String name, int quantity, double cost, int vendMId)
-    {
-        maxId++;
-        id = maxId;
+    this.name = name;
+    this.quantity = quantity;
+    this.cost = cost;
+    this.vendingMachineId =  vendingMachineId;
+  }
 
-        this.name = name;
-        this.quantity = quantity;
-        this.cost = cost;
-        this.vendMId = vendMId;
-    }
+// Getters and Setters
+// id
+  public int getId()
+  {
+    return id;
+  }
 
+// name
+  public String getName()
+  {
+    return name;
+  }
+  public void setName(String name)
+  {
+    this.name = name;
+  }
 
-    //methods
+// quantity
+  public int getQuantity()
+  {
+    return quantity;
+  }
+  public void setQuantity(int quantity)
+  {
+    this.quantity += quantity;
+  }
 
-        //getters
+// Cost
+  public double getCost()
+  {
+    return cost;
+  }
+  public void setCost(double cost)
+  {
+    this.cost = cost;
+  }
 
-    public int getId()
-    {
-        return id;
-    }
+// vendingMachineId
+  public int getVendingMachineId()
+  {
+    return vendingMachineId;
+  }
+  public void setVendingMachineId(int vendingMachineId)
+  {
+    this.vendingMachineId = vendingMachineId;
+  }
 
-    public String getName()
-    {
-        return name;
-    }
+// buySnack
+  public void buySnackQuantity(int numToBuy)
+  {
+    this.quantity -= numToBuy;
+  }
 
-    public int getQuantity()
-    {
-        return quantity;
-    }
-    
-     public double getCost()
-    {
-        return cost;
-    }
+// total
+  public double getTotal(int quantity)
+  {
+    return this.cost * quantity;
+  }
 
-    public int vendMId()
-    {
-        return vendMId;
-    }
-
-    public double getTotalCost(int quantity)
-    {
-        return cost * quantity;
-    }
-
-    //setters 
-
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-    public void setCost(double cost)
-    {
-        this.cost = cost;
-    }
-
-    public void setVendMId(int vendMId)
-    {
-        this.vendMId = vendMId;
-    }
-
-    public void addQuality(int quantity)
-    {
-        this.quantity= this.quantity + quantity;
-    }
-    public void buySnack(int quantity)
-    {
-        this.quantity = this.quantity - quantity;
-    }
-    
 }

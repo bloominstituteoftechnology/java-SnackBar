@@ -1,51 +1,70 @@
 package snackbarapplication;
 
-public class Customer 
+public class Customer
 {
-    //feilds 
-    private static int maxId = 0;
-    private int id;
-    private String name;
-    private double cashOnHand;
+// Customer fields
+  private int maxId = 0;
 
-    //constructor
-    private Custormer(String name, double cashOnHand)
-    {
-        maxId++;
-        id = maxId;
+  private int id;
+  private String name;
+  private double cashOnHand;
 
-        this.name = name;
-        this.cashOnHand = cashOnHand;
-    }
+//Constructor
+  public Customer(String name, double cashOnHand)
+  {
+    maxId++;
+    id = maxId;
 
-    //getters
+    this.name = name;
+    this.cashOnHand = cashOnHand;
+  }
 
-    public int getId()
-    {
-        return id;
-    }
-    public String getName()
-    {
-        return name;
-    }
-    public double getCashOnHand()
-    {
-        return cashOnHand;
-    }
+// getter and Setters
+// id
+  public int getId()
+  {
+    return id;
+  }
 
-    //setters
+// name
+  public String getName()
+  {
+    return name;
+  }
+  public void setName(String name)
+  {
+    this.name = name;
+  }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+// cashOnHand
+  public double getCashOnHand()
+  {
+    return cashOnHand;
+  }
+  public void setCashOnHand(double cashOnHand)
+  {
+    this.cashOnHand = cashOnHand;
+  }
 
-    public void addCash(double addCash)
-    {
-        this.cashOnHand += addCash;
-    }
-    public void buySnack(int snackQuantity, double snackCost)
-    {
-        this.cashOnHand -= snackCost * snackQuantity;
-    }
+// Methods add cashOnHand and buy snacks
+// Add cashOnHand
+  public void addCash(double addCash)
+  {
+    this.cashOnHand += addCash;
+  }
+
+// Buy snacks
+  public void buySnack(int snackQuantity, double snackCost)
+  {
+    this.cashOnHand -= snackCost * snackQuantity;
+  }
+
+  @Override
+  public String toString()
+  {
+    return "Customer: " + name;
+
+  }
+
+
 }
