@@ -2,7 +2,7 @@
 
 A student that completes this project shows that they can:
 
-* Understand what makes Java a programming language worth studying
+* Understand what makes Java a programming language worth studying ✔️
 * Explain the basic concept of Object Oriented Programming and how they relate to Java
 * Create and manipulate the base Java types which include Boolean, byte, char (including Strings), short, int, long, float, and double
 * Craft multiple Java Classes which include comments, constructors, static and instance variables (fields), accessors, public and private methods and instantiate and use Objects of these classes
@@ -26,9 +26,9 @@ Snack has fields (so knows)
 
 Snack has methods (so can)
 
-* get id
-* set and get name
-* set and get cost
+* get id ✔️
+* set and get name ✔️
+* set and get cost ✔️
 * set and get vending machine id
 * get quantity
 * add quantity when given how many to add
