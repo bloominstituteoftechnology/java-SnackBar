@@ -2,14 +2,14 @@ package snackbarapplication;
 
 public class Customer
 {
-// Customer fields
+// Customer fields✔️
   private int maxId = 0;
 
   private int id;
   private String name;
   private double cashOnHand;
 
-//Constructor
+//Constructor✔️
   public Customer(String name, double cashOnHand)
   {
     maxId++;
@@ -20,13 +20,13 @@ public class Customer
   }
 
 // getter and Setters
-// id
+// id ✔️
   public int getId()
   {
     return id;
   }
 
-// name
+// name ✔️
   public String getName()
   {
     return name;
@@ -36,7 +36,7 @@ public class Customer
     this.name = name;
   }
 
-// cashOnHand
+// cashOnHand ✔️
   public double getCashOnHand()
   {
     return cashOnHand;
@@ -46,14 +46,14 @@ public class Customer
     this.cashOnHand = cashOnHand;
   }
 
-// Methods add cashOnHand and buy snacks
+// Methods ✔️
 // Add cashOnHand
   public void addCash(double addCash)
   {
     this.cashOnHand += addCash;
   }
 
-// Buy snacks
+// Buy snacks✔️
   public void buySnack(int snackQuantity, double snackCost)
   {
     this.cashOnHand -= snackCost * snackQuantity;

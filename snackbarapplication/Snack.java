@@ -10,7 +10,7 @@ public class Snack
   private double cost;
   private int vendingMachineId;
 
-// Constructor
+// Constructor ✔️
   public Snack(String name, int quantity, double cost, int vendingMachineId)
   {
     maxId++;
@@ -23,13 +23,13 @@ public class Snack
   }
 
 // Getters and Setters
-// id
+// id✔️
   public int getId()
   {
     return id;
   }
 
-// name
+// Name✔️
   public String getName()
   {
     return name;
@@ -39,7 +39,7 @@ public class Snack
     this.name = name;
   }
 
-// quantity
+// Quantity✔️
   public int getQuantity()
   {
     return quantity;
@@ -49,7 +49,7 @@ public class Snack
     this.quantity += quantity;
   }
 
-// Cost
+// Cost✔️
   public double getCost()
   {
     return cost;
@@ -59,7 +59,7 @@ public class Snack
     this.cost = cost;
   }
 
-// vendingMachineId
+// vendingMachineId ✔️
   public int getVendingMachineId()
   {
     return vendingMachineId;
@@ -69,13 +69,13 @@ public class Snack
     this.vendingMachineId = vendingMachineId;
   }
 
-// buySnack
+// buySnack✔️
   public void buySnackQuantity(int numToBuy)
   {
     this.quantity -= numToBuy;
   }
 
-// total
+// total✔️
   public double getTotal(int quantity)
   {
     return this.cost * quantity;

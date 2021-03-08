@@ -2,12 +2,14 @@ package snackbarapplication;
 
 public class VendingMachine
 {
+
+  //feilds ✔️
   private int maxId = 0;
 
   private int id;
   private String name;
 
-// Constructor
+// Constructor✔️
   public VendingMachine(String name)
   {
     maxId++;
@@ -16,14 +18,14 @@ public class VendingMachine
     this.name = name;
   }
 
-// Getters and Setters
-// id
+// Getters and Setters~
+// id✔️
   public int getId()
   {
     return id;
   }
 
-// name
+// name✔️
   public String getName()
   {
     return name;

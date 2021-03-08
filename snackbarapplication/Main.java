@@ -22,7 +22,7 @@ public class Main
       Snack water = new Snack("Water", 20, 2.75, drink.getId());
 
 
-  // PROCESSING
+  // PROCESSING of the application!~
       var quantityOfItems = 3;
       cust1.buySnack(quantityOfItems, soda.getCost());
       soda.buySnackQuantity(quantityOfItems);
