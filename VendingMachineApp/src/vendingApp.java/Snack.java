@@ -1,6 +1,6 @@
 package vendingApp;
 
-public class VendingApp {
+public class Snack {
 
     private static int maxId = 1;
     private int id;
@@ -10,7 +10,7 @@ public class VendingApp {
     private int vendingMachineId;
     private String vendingMachineName;
 
-    public Snack(String name, int quantity, double cost, int vendingMachineId, String vendingMachineName)
+    public Snack(String name, int quantity, double cost, int vendingMachineId, String vendingMachineName, int maxId)
         {
             this.id = maxId++;
             this.name = name;
