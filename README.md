@@ -17,9 +17,9 @@ At a high level, you will create snacks, vending machines, and customers. You wi
 
 ## Instructions and Completion Requirements
 
-* [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
-* [ ] When you are done, create a Pull Request (PR)
-* [ ] To submit the assignment, paste the URL of your branch into the assignment module in Canvas.
+* [x] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
+* [x] When you are done, create a Pull Request (PR)
+* [x] To submit the assignment, paste the URL of your branch into the assignment module in Canvas.
 
 You need to create three different classes in your project: `Snack`, `Customer`, and `VendingMachine`. Details for what fields and methods each class needs to contain are below.
 
@@ -77,63 +77,63 @@ Customer has methods (so can):
 
 The first thing you need to do is set up the three classes (as specified above) in your project:
 
-* [ ] Snack
-* [ ] VendingMachine
-* [ ] Customer
+* [x] Snack
+* [x] VendingMachine
+* [x] Customer
 
 Next, you need to instantiate some objects using the classes that you've designed:
 
-* [ ] Instantiate 2 Customers
-  * [ ] Jane with $45.25
-  * [ ] Bob with $33.14
+* [x] Instantiate 2 Customers
+  * [x] Jane with $45.25
+  * [x] Bob with $33.14
 
-* [ ] Instantiate 3 Vending Machines
-  * [ ] Food
-  * [ ] Drink
-  * [ ] Office
+* [x] Instantiate 3 Vending Machines
+  * [x] Food
+  * [x] Drink
+  * [x] Office
 
-* [ ] Instantiate 5 Snacks
-  * [ ] In "Food" Vending Machine
-    * [ ] 36 Chips with a price of $1.75 each
-    * [ ] 36 Chocolate Bar with a price of $1.00 each
-    * [ ] 30 Pretzel with a price of $2.00 each
-  * [ ] In "Drink" Vending Machine
-    * [ ] 24 Soda with a price of $2.50 each
-    * [ ] 20 Water with a price of $2.75 each
+* [x] Instantiate 5 Snacks
+  * [x] In "Food" Vending Machine
+    * [x] 36 Chips with a price of $1.75 each
+    * [x] 36 Chocolate Bar with a price of $1.00 each
+    * [x] 30 Pretzel with a price of $2.00 each
+  * [x] In "Drink" Vending Machine
+    * [x] 24 Soda with a price of $2.50 each
+    * [x] 20 Water with a price of $2.75 each
 
 Now, that you've instantiated some objects and your program has a "state", you need to interact with your program's objects to make sure the fields and methods are working as expected. Completing these steps is considered the MVP of your snack bar program:
 
-* [ ] Customer Jane buys 3 Sodas
-  * [ ] Print Jane's cash on hand (example: `System.out.println("Jane's cash on hand is " + jane.getCash());`)
-    * [ ] `Jane's cash on hand is 37.75`
-  * [ ] Print quantity of soda (example: `System.out.println("Quantity of soda is " + soda.getQuantity());`)
-    * [ ] `Quantity of soda is 21`
-* [ ] Jane buys 1 Pretzel
-  * [ ] Print Jane's cash on hand
-    * [ ] `Jane's cash on hand is 35.75`
-  * [ ] Print quantity of Pretzel
-    * [ ] `Quantity of pretzel is 29`
-* [ ] Bob buys 2 sodas
-  * [ ] Print Bob's cash on hand
-    * [ ] `Bob's cash on hand is 28.14`
-  * [ ] Print quantity of soda
-    * [ ] `Quantity of soda is 19`
-* [ ] Jane finds $10.00 and add's it to her cash on hand
-  * [ ] Print Jane's cash on hand
-    * [ ] `Jane's cash on hand is 45.75`
-* [ ] Jane buys 1 chocolate bar
-  * [ ] Print Jane's cash on hand
-    * [ ] `Jane's cash on hand is 44.75`
-  * [ ] Print quantity of chocolate bar
-    * [ ] `Quantity of chocolate bar is 35`
-* [ ] Add 12 more pretzels
-  * [ ] Print quantity of pretzels
-    * [ ] `Quantity of pretzel is 41`
-* [ ] Bob buys 3 pretzels
-  * [ ] Print Bob's cash on hand
-    * [ ] `Bob's cash on hand is 22.14`
-  * [ ] Print quantity of pretzel
-    * [ ] `Quantity of pretzel is 38`
+* [x] Customer Jane buys 3 Sodas
+  * [x] Print Jane's cash on hand (example: `System.out.println("Jane's cash on hand is " + jane.getCash());`)
+    * [x] `Jane's cash on hand is 37.75`
+  * [x] Print quantity of soda (example: `System.out.println("Quantity of soda is " + soda.getQuantity());`)
+    * [x] `Quantity of soda is 21`
+* [x] Jane buys 1 Pretzel
+  * [x] Print Jane's cash on hand
+    * [x] `Jane's cash on hand is 35.75`
+  * [x] Print quantity of Pretzel
+    * [x] `Quantity of pretzel is 29`
+* [x] Bob buys 2 sodas
+  * [x] Print Bob's cash on hand
+    * [x] `Bob's cash on hand is 28.14`
+  * [x] Print quantity of soda
+    * [x] `Quantity of soda is 19`
+* [x] Jane finds $10.00 and add's it to her cash on hand
+  * [x] Print Jane's cash on hand
+    * [x] `Jane's cash on hand is 45.75`
+* [x] Jane buys 1 chocolate bar
+  * [x] Print Jane's cash on hand
+    * [x] `Jane's cash on hand is 44.75`
+  * [x] Print quantity of chocolate bar
+    * [x] `Quantity of chocolate bar is 35`
+* [x] Add 12 more pretzels
+  * [x] Print quantity of pretzels
+    * [x] `Quantity of pretzel is 41`
+* [x] Bob buys 3 pretzels
+  * [x] Print Bob's cash on hand
+    * [x] `Bob's cash on hand is 22.14`
+  * [x] Print quantity of pretzel
+    * [x] `Quantity of pretzel is 38`
 
 The stretch goals for this project are:
 
