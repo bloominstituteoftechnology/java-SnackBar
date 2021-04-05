@@ -6,6 +6,11 @@ public class Main {
     }
 
     private static void workWithData() {
-        System.out.println("Working!")
+
+        Snack kitkatSnack = new Snack("KitKat", 32, 2.99, 1);
+        
+        kitkatSnack.additems(2);
+        kitkatSnack.buysnack(3);
+        kitkatSnack.totalcost(5);
     }
 }

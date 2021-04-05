@@ -9,7 +9,11 @@ public class Snack {
     private double cost;
     private int vendingid;
 
-    public Snack (String name, int quantity,double cost, int vendingid) {
+    public Snack (String name, 
+                 int quantity,
+                 double cost, 
+                 int vendingid) {
+
         id = maxId;
         maxId++;
 
@@ -23,7 +27,7 @@ public class Snack {
         return id;
     }
 
-    public getName() {
+    public String getName() {
         return name;
     }
 
@@ -31,7 +35,7 @@ public class Snack {
         this.name = name;
     }
 
-    public getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
@@ -39,7 +43,7 @@ public class Snack {
         this.quantity = quantity;
     }
 
-    public getCost() {
+    public double getCost() {
         return cost;
     }
 
@@ -47,7 +51,7 @@ public class Snack {
         this.cost = cost;
     }
 
-    public getVendingid() {
+    public int getVendingid() {
         return vendingid;
     }
 
@@ -55,15 +59,19 @@ public class Snack {
         this.vendingid = vendingid;
     }
 
-    @Override
-    public String toString() {
-        return "Snack { \n" +
-        "id: " + id + "\n" +
-        "name: " + name "\n}";
+    public void additems(int item) {
+        quantity += item;
+        System.out.println("Quantity of " + name + " is now " + quantity);
     }
 
-    // public int Additem(int item) {
-    //     return 
-    // }
+    public void buysnack(int item) {
+        quantity -= item;
+        System.out.println(item + " of " + name + " were purchesed!" );
+    }
+
+    public void totalcost(int item) {
+        cost *= item;
+        System.out.println(item + " of " + name + " costs " + cost);
+    }
 
 }
