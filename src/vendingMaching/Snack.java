@@ -44,7 +44,7 @@ public class Snack {
     }
 
     public double getCost() {
-        return cost;
+        return "$" + cost;
     }
 
     public void setCost(double cost) {
