@@ -5,10 +5,6 @@ import java.text.DecimalFormat;
 public class Main {
   private static DecimalFormat df = new DecimalFormat("$#,##0.00");
 
-  public static void printMachine(VendingMachine machine) {
-    System.out.println("Vending Machine: " + machine.getName());
-  }
-
   private static void printCustomerCash(Customer customer) {
     String strResult = df.format(customer.getCashOnHand());
     System.out.println(customer.getName() + "'s cash on hand: " + strResult);
@@ -36,7 +32,7 @@ public class Main {
 
   private static void printSnackDetails(Snack snack, VendingMachine machine) {
     System.out.println("Snack: " + snack.getName());
-    printMachine(machine);
+    System.out.println(machine);
     System.out.println("Quantity: " + snack.getQuantity());
     System.out.println("Total Cost: " + df.format(snack.getTotalCost(snack.getQuantity())));
     System.out.println("");
