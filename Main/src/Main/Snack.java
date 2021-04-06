@@ -6,13 +6,15 @@ public class Snack {
   private String name;
   private int quantity;
   private double cost;
+  private int vendingMachineId;
 
-  public Snack(String name, int quantity, double cost) {
+  public Snack(String name, int quantity, double cost, int vendingMachineId) {
     id = maxId;
     maxId++;
     this.name = name;
     this.quantity = quantity;
     this.cost = cost;
+    this.vendingMachineId = vendingMachineId;
   }
 
   public int getId() {
@@ -31,6 +33,10 @@ public class Snack {
     return quantity;
   }
 
+  public int getVendingMachineId(){
+    return vendingMachineId;
+  }
+
   public void setId(int id) {
     this.id = id;
   }
@@ -45,6 +51,10 @@ public class Snack {
 
   public void setQuantity(int quantity) {
     this.quantity = quantity;
+  }
+
+  public void setVendingMachineId(int vendingMachineId) {
+    this.vendingMachineId = vendingMachineId;
   }
 
   public static void main(String[] args) {
