@@ -32,12 +32,12 @@ public class Customer {
 
     public void addCash(double money) {
         cash += money;
-        System.out.println(name + " added " + money + " to their wallet.");
+        System.out.printf(name + " added ",money + " to their wallet.");
     }
 
     public void buySnacks(double cost) {
         cash -= cost;
-        System.out.println(name + " spent " + cost + " on snacks.");
+        System.out.printf(name + " spent ",cost + " on snacks.");
     }
     
 }

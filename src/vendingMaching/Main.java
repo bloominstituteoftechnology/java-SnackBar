@@ -22,22 +22,22 @@ public class Main {
         Snack Water = new Snack("Water", 20, 2.75, 2);
 
         Jane.buySnacks(7.50);
-        System.out.println("Janes Cash on hand is: " + Jane.getCash());
+        System.out.printf("Janes Cash on hand is: $%,.2f\n", Jane.getCash());
 
         Soda.buysnack(3);
         System.out.println("Quantity of Soda is " + Soda.getQuantity());
 
         Jane.buySnacks(2);
-        System.out.println("Janes Cash on hand is: " + Jane.getCash());
+        System.out.printf("Janes Cash on hand is: $%,.2f\n", Jane.getCash());
 
         Pretzel.buysnack(1);
 
         Bob.buySnacks(5);
-        System.out.println("Bob's Cash on hand is: " + Bob.getCash());
+        System.out.printf("Bob's Cash on hand is: $%,.2f\n", Bob.getCash());
         System.out.println("Quantity of Soda is: " + Soda.getQuantity());
 
         Jane.addCash(10);
-        System.out.println("Janes cash on hand is" + Jane.getCash());
+        System.out.printf("Janes cash on hand is $%,.2f\n", Jane.getCash());
         Chocolate.buysnack(1);
         Jane.buySnacks(1);
         System.out.println("Quantity of " + Chocolate.getName() + " is " + Chocolate.getQuantity());
@@ -45,15 +45,10 @@ public class Main {
         Pretzel.additems(12);
 
         Bob.buySnacks(6);
-        System.out.println("Bob has " +Bob.getCash());
+        System.out.printf("Bob has $%,.2f\n", Bob.getCash());
         Pretzel.buysnack(3);
         System.out.println(Pretzel.getQuantity());
-
-        // Snack kitkatSnack = new Snack("KitKat", 32, 2.99, 1);
-        
-        // kitkatSnack.additems(2);
-        // kitkatSnack.buysnack(3);
-        // kitkatSnack.totalcost(5);
+ 
     }
 
 }
