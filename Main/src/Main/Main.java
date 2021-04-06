@@ -92,4 +92,3 @@ public class Main {
                 "Total Cost: $" + String.format("%.2f", water.getQuantity() * water.cost()));
     }
 }
- 
