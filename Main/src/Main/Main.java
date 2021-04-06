@@ -67,25 +67,34 @@ public class Main {
                 "Vending Machine: " + food.name() + "\n"+
                 "Quantity: " + chips.getQuantity() + "\n" +
                 "Total Cost: $" + String.format("%.2f", chips.getQuantity() * chips.cost()));
+        // Print blank line
+        System.out.println("\n");
         
         //Chocolate Bar
         System.out.println("Snack: " + chocolateBar.name() + "\n"
                 + "Vending Machine: " + food.name() + "\n"
                 + "Quantity: " + chocolateBar.getQuantity() + "\n" 
                 + "Total Cost: $" + String.format("%.2f",chocolateBar.getQuantity() * chocolateBar.cost()));
-            
+        // Print blank line
+        System.out.println("\n");
+
         //Pretzel
         System.out.println("Snack: " + pretzel.name() + "\n"
                 + "Vending Machine: " + food.name() + "\n"
                 + "Quantity: " + pretzel.getQuantity() + "\n" 
                 + "Total Cost: $" + String.format("%.2f", pretzel.getQuantity() * pretzel.cost()));
         
+        // Print blank line
+        System.out.println("\n");
+
         // Soda
         System.out.println("Snack: " + soda.name() + "\n"
                 + "Vending Machine: " + drink.name() + "\n"
                 + "Quantity: " + soda.getQuantity() + "\n" 
                 + "Total Cost: $" + String.format("%.2f", soda.getQuantity() * soda.cost()));
-        
+
+        //Print blank line
+        System.out.println("\n");
         // Water
         System.out.println("Snack: " + water.name() + "\n"
                 + "Vending Machine: " + drink.name() + "\n"
