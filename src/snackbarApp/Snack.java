@@ -72,6 +72,6 @@ public class Snack {
 
     @Override
     public String toString(){
-        return "Quantity of " + name + " " + "is " + quantity;
+        return "Quantity of " + this.getName() + " " + "is " + this.getQuantity();
     }
 }
