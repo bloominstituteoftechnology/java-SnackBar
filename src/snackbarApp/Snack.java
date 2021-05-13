@@ -66,8 +66,9 @@ public class Snack {
         this.setQuantity(this.getQuantity() - boughtSnacks);
     }
 
-    public double getTotalCost(){
-        return getQuantity() * getCost();
+    public double getTotalCost(int num){
+        this.buySnack(num);
+        return num * getCost();
     }
 
     @Override
