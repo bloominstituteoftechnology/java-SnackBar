@@ -32,6 +32,10 @@ public class Customer {
         this.cashonhand = cashonhand;
     }
 
+    public void addCashOnHand(double cash){
+        this.setCashOnHand(getCashOnHand() + cash);
+    }
+
     public int getid(){
         return id;
     }
