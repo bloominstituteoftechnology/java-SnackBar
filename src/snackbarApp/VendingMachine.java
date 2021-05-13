@@ -9,6 +9,8 @@ public class VendingMachine {
     private String name;
 
     public VendingMachine(String name) {
+        id = maxId;
+        maxId++;
         this.name = name;
     }
 
