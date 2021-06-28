@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "snackBar.Main",
+            "projectName": "java-SnackBar_83b47e53"
+        }
+    ]
+}
